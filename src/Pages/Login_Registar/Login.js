@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Login = () => {
+    const { userSingInWithEmailPassword } = useContext(AuthContext)
+
+
+    const handelLogInBtn= (event) =>{
+
+        event.preventDefault()
+      
+        const password = event.target.Password.value;
+        const email = event.target.email.value;
+
+         // Sing In part
+        userSingInWithEmailPassword(email, password)
+        
+
+
+
+
+    }
+
+
+
+
+
     return (
        <div className='flex justify-center items-center pt-8 mx-5'>
                 <div className='flex flex-col max-w-md px-6 py-2 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
@@ -11,7 +35,7 @@ const Login = () => {
                             Sign in to access your account
                         </p>
                     </div>
-                    <form 
+                    <form onSubmit={handelLogInBtn}
                         noValidate=''
                         action=''
                         className='space-y-2 ng-untouched ng-pristine ng-valid'
@@ -102,7 +126,7 @@ const Login = () => {
                     </div>
                     <p className='px-6 text-sm text-center text-gray-400'>
                         Don't have an account yet?{' '}
-                        <Link to='/registrar' href='#' className='hover:underline text-gray-600'>
+                    <Link to='/registration' href='#' className='hover:underline text-gray-600'>
                             Sign up
                         </Link>
                         .
