@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import app from '../Firebase/Firebase';
-import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, onAuthStateChanged, updateProfile, GoogleAuthProvider, signInWithPopup, signOut, signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword, sendEmailVerification, onAuthStateChanged, updateProfile, GoogleAuthProvider, signInWithPopup, signOut, signInWithEmailAndPassword, sendPasswordResetEmail, GithubAuthProvider } from 'firebase/auth'
 
 
 export const AuthContext = createContext();
@@ -8,6 +8,8 @@ export const AuthContext = createContext();
 const auth = getAuth(app)
 //google auth provider
 const googleProvider = new GoogleAuthProvider()
+//github auth provider
+const githubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
 
@@ -24,18 +26,28 @@ const AuthProvider = ({ children }) => {
     const emailVerification = () => {
         return sendEmailVerification(auth.currentUser);
     }
-    //login part sing In
-    const userSingInWithEmailPassword = (email, password) =>{
-       return signInWithEmailAndPassword(auth, email, password)
+
+    //Log out part
+    const logOutPart = () =>{
+        
     }
+    //login part sing In
+    const userSingInWithEmailPassword = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+
 
     // google auto login--
     const googleAutoLogIn = () => {
         return signInWithPopup(auth, googleProvider)
     }
+    //Github auto login
+    const gitHubAutoLogIn = () => {
+        return signInWithPopup(auth, githubProvider)
+    }
 
 
-    const authInfo = { createUsers, updateDetails, emailVerification, googleAutoLogIn, userSingInWithEmailPassword }
+    const authInfo = { createUsers, updateDetails, emailVerification, googleAutoLogIn, userSingInWithEmailPassword, gitHubAutoLogIn }
 
     return (
         <AuthContext.Provider value={authInfo}>

@@ -45,43 +45,29 @@ const Navbar = () => {
                 {/* -----------navbar-end text btn section--------- */}
                 <div className="navbar-end">
 
-                    {/* <ul className="lg-header mx-10  hidden lg:block">
-                        <Link to='/' className='btn mx-6'>Home</Link>
-                        <Link to='/education' className='btn'>Education</Link>
-                        <Link to='skill' className='btn mx-6'>Skill</Link>
-                        <Link to='/project' className='btn mx-6'>My Project</Link>
-
-                        <Link to='/about' className='btn'>About</Link>
-                        <Link to='/registrar' className='btn mx-6'>Registrar</Link>
-                        <Link to='/login' className='btn'>Login</Link>
-                    </ul> */}
+    
                     <div className="hidden lg:block mr-5">
 
                         <ul className="lg-header menu menu-horizontal p-0">
                             <Link to='/' className='btn mx-6'>Home</Link>
-                            <Link to='courses' className='btn'>Our Courses</Link>    
-                            <li tabIndex={0} className=''>
-                                <Link to='/development' className='btn mx-5'>
-                                    our service
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                                </Link>
+                            <Link to='courses' className='btn'>Our Courses</Link>
+                            <Link to='/about' className='btn ml-5'>About</Link>
 
-                                {/* -----inside ui link droup-down menu----- */}
-                                <ul className="px-2 pb-2 bg-slate-700 w-44">
-                                    <Link to='skill' className='btn mx-6'>Skill</Link>
-                                    <Link to='/project' className='btn mx-6'>Our Project</Link>
+                            <label for="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
+                                <span className='text-1xl text-bold'>Light</span>
+                                <span className="relative">
+                                    <input id="Toggle1" type="checkbox" className="hidden peer" />
+                                    <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400"></div>
+                                    <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
+                                </span>
+                                <span>Dark</span>
+                            </label>
 
-                                    <Link to='/registration' className='btn mx-6'>Registrar</Link>
-                                    <Link to='/login' className='btn'>Login</Link>
-                                </ul>
-                                {/* -----inside ui link droup-down menu end----- */}
-                            </li>    
-                            <Link to='/about' className='btn'>About</Link>
                             <Link to='/registration' className='btn mx-6'>Registrar</Link>
                             <Link to='/login' className='btn'>Login</Link>
 
-                                    {/* <Link to='/' onClick='' id='logout' className='btn mx-4'>Log out</Link> */}
-                   
+                            {/* <Link to='/' onClick='' id='logout' className='btn mx-4'>Log out</Link> */}
+
 
                         </ul>
                     </div>
@@ -91,11 +77,11 @@ const Navbar = () => {
                     <div id='avatar' className="avatar online placeholder mr-2 ">
                         <div className="w-7 rounded-full ring ring-primary
                          ring-offset-base-100 ring-offset-2">
-                           
-                                    <img className='w-6 bg-slate-300' src='' />
-                                    
-                                    {/* <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" /> */}
-                            
+
+                            <img className='w-6 bg-slate-300' src='' />
+
+                            {/* <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" /> */}
+
                         </div>
                     </div>
 

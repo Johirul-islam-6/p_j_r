@@ -3,6 +3,7 @@ import { FaPaperPlane, FaRegHandPointRight, } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const CourseCard = ({ course }) => {
+    // console.log(course)
     return (
         <>
           
@@ -13,11 +14,17 @@ const CourseCard = ({ course }) => {
                              {course?.title}
                             <div className="badge badge-secondary">New</div>
                         </h2>
-                    <p className=''>{course?.Paragrap.slice(0, 50)}<span className='text-blue-300 cursor-pointer'> More..</span></p>
-                        <div className="card-actions justify-center mt-3">
-                        <Link className="btn btn-outline btn-success">Course Details <span className='pl-2 text-sm'> <FaPaperPlane></FaPaperPlane></span></Link>
-                          
-                        </div>
+                        {
+                            course.Paragrap.length > 20 ?
+                            <>
+                                <p className=''>{course?.Paragrap.slice(0, 50)}<span className='text-blue-300 cursor-pointer'> More..</span></p>
+                                <div className="card-actions justify-center mt-3">
+                                    <Link to={`/courses/${course?._id}`} className="btn btn-outline btn-success">Course Details <span className='pl-2 text-sm'> <FaPaperPlane></FaPaperPlane></span></Link>
+                                </div>
+                            </> : <p>heloo</p>
+
+                        }
+                   
                     </div>
                 </div>
          
