@@ -37,13 +37,14 @@ export const router = createBrowserRouter([
                 path: '/block',
                 element: <Block></Block>
             },
-            {
-                path: '/registration',
-                element: <Registrar></Registrar>
-            },
+          
             {
                 path: '/login',
                 element: <Login></Login>
+            },
+            {
+                path: '/registration',
+                element: <Registrar></Registrar>
             },
             {
                 path: '/course_details',

@@ -1,10 +1,13 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
     const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn, user } = useContext(AuthContext)
+    //error show display
+    const [error, setError] = useState('')
+    const [success, setSuccess] = useState('')
 
     //location part 
     const navigat = useNavigate()
@@ -26,6 +29,14 @@ const Login = () => {
                 navigat(froms, { replace: true })
             }).catch(error => console.log(error))
 
+        setTimeout(() => {
+            if (!password) {
+                return setSuccess("You are success fully Log in ..")
+            } else {
+                return setError("Did't match you Password !")
+            }
+        }, 500)
+
     }
 
     //google auto log in part
@@ -37,11 +48,11 @@ const Login = () => {
             }).catch(error => console.log(error))
     }
     //Ghithub auto log in part
-    const githubAutoLogIN = () =>{
+    const githubAutoLogIN = () => {
         gitHubAutoLogIn()
-        .then(result => {
-            navigat(froms, { replace: true })
-        }).catch(error => console.log(error))
+            .then(result => {
+                navigat(froms, { replace: true })
+            }).catch(error => console.log(error))
     }
 
     useEffect(() => {
@@ -98,7 +109,7 @@ const Login = () => {
                         </div>
                     </div>
 
-                    <p className='text-center text-red-400 text-sm pb-1'>{ }</p><p className='text-center text-green-500 text-xs pb-1'>{ }</p>
+                    <p className='text-center text-red-400 text-sm pb-1'>{error}</p><p className='text-center text-green-500 text-xs pb-1'>{ }</p>
 
                     <div>
                         <button

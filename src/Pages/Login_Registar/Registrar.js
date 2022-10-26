@@ -7,7 +7,7 @@ import { AuthContext } from '../../Contexts/AuthProvider';
 const Registrar = () => {
 
     const { createUsers, updateDetails, emailVerification, googleAutoLogIn, gitHubAutoLogIn } = useContext(AuthContext);
-    const navigat = useNavigate()
+    const navigates= useNavigate()
 
     const [error, setError] = useState();
     const [successRegistion, setSuccess] = useState();
@@ -21,7 +21,6 @@ const Registrar = () => {
         const password = event.target.Password.value;
         const email = event.target.email.value;
         const confirmPassword = event.target.confirmPassword.value;
-        console.log(userName);
         //password condition
         const upper = /[A-Z]/;
         const letter = /[a-z]/;
@@ -57,7 +56,7 @@ const Registrar = () => {
         createUsers(email, password)
             .then(result => {
                 console.log("first user", result.user);
-                navigat('/login')
+                navigates('/login');
                 updateDetails(userName, profilePhoto)
                     .then(result => {
                         alert("update Your Details or Information")
@@ -82,7 +81,7 @@ const Registrar = () => {
         googleAutoLogIn()
             .then(restult => {
                 console.log('your are success google logIn');
-                navigat('/courses')
+                navigates('/courses')
             })
     }
 
@@ -90,7 +89,7 @@ const Registrar = () => {
     const gitHubHandelBtn = () => {
         gitHubAutoLogIn()
             .then(result => {
-                navigat('/courses')
+                navigates('/courses')
             }).catch(error => console.log(error))
     }
 
