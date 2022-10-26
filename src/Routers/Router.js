@@ -24,29 +24,33 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: ( <PrivetRoute> <AllCourse></AllCourse> </PrivetRoute>)
+                element: (
+                    <PrivetRoute><AllCourse></AllCourse></PrivetRoute>
+                )
+                    
                 // element: <AllCourse></AllCourse>
-                
+
             },
-           
+
             {
                 path: '/courses/:id',
                 element: <Course_Details></Course_Details>,
                 loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
-                
+
             },
             {
                 path: '/about',
                 element: <About></About>
             },
             {
-                path: '/login',
-                element: <Login></Login>
-            },
-            {
                 path: '/registration',
                 element: <Registrar></Registrar>
             },
+            {
+                path: '/login',
+                element: <Login></Login>
+            },
+            
             {
                 path: '/servise',
                 element: <Course_Details></Course_Details>

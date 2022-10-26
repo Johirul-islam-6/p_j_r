@@ -7,9 +7,10 @@ const Login = () => {
     const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn, user } = useContext(AuthContext)
 
     //location part 
-    const navigate = useNavigate()
+    const navigat = useNavigate()
     const location = useLocation()
     const froms = location?.state?.from?.pathname || '/';
+    console.log(froms);
 
 
     const handelLogInBtn = (event) => {
@@ -22,34 +23,30 @@ const Login = () => {
         // Sing In part
         userSingInWithEmailPassword(email, password)
             .then(result => {
-                navigate(froms, { replace: true })
-            })
-
-
-
+                navigat(froms, { replace: true })
+            }).catch(error => console.log(error))
 
     }
-
 
     //google auto log in part
     const googleBtnAutoLogIn = () => {
         googleAutoLogIn()
             .then(restult => {
-                console.log('your are success google logIn');
-                navigate(froms, { replace: true })
-            })
+                console.log('your are success Auto logIn in Google');
+                navigat(froms, { replace: true })
+            }).catch(error => console.log(error))
     }
     //Ghithub auto log in part
     const githubAutoLogIN = () =>{
         gitHubAutoLogIn()
         .then(result => {
-            navigate(froms, { replace: true })
-        })
+            navigat(froms, { replace: true })
+        }).catch(error => console.log(error))
     }
 
     useEffect(() => {
         if (user) {
-            navigate(froms, { replace: true })
+            navigat(froms, { replace: true })
         }
     }, [user])
 

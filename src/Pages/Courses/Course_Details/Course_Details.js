@@ -5,7 +5,7 @@ import { FaDownload, FaJsSquare, IconName } from "react-icons/fa";
 const Course_Details = () => {
 
     const singelCourse = useLoaderData()
-    console.log(singelCourse.title);
+
 
     return (
         <>

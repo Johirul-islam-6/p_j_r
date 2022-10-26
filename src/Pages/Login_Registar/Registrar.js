@@ -6,8 +6,9 @@ import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Registrar = () => {
 
+    const navigat = useNavigate();
     const { createUsers, updateDetails, emailVerification, googleAutoLogIn } = useContext(AuthContext);
-    const navigate = useNavigate()
+
 
     const [error, setError] = useState();
     const [successRegistion, setSuccess] = useState();
@@ -53,33 +54,39 @@ const Registrar = () => {
             setSuccess("You are success Registration 👍👍")
         }
         // ------condition end--------
-        
+        //create email password auth function call
         createUsers(email, password)
-        .then(result =>{
-            console.log("first user", result.user);
-            navigate('/login')
-            updateDetails(userName, profilePhoto)
-            .then(result =>{
-                alert("update Your Details or Information")
+            .then(result => {
+                console.log("first user", result.user);
+                setTimeout(() => {
+                    navigat('/login')
+                }, 1500);
+                console.log('login page');
+                updateDetails(userName, profilePhoto)
+                    .then(result => {
+                        alert("update Your Details or Information")
 
-                emailVerification()
-                .then(result => {
-                    alert('Please cheack email. then visite your email verification link !' )
-                }).catch(error =>console.log(error))
+                        emailVerification()
+                            .then(result => {
+                                alert('Please cheack email. then visite your email verification link !')
+
+                            }).catch(error => console.log(error))
+
+                    }).catch(error => console.log(error))
+
+                console.log("last update", result.user);
+
             }).catch(error => console.log(error))
-            console.log("last update", result.user);
-        }).catch(error => console.log(error))
-
 
     }
 
     //Google btn auto logIn 
-    const googleBtnAutoLogIn= () =>{
+    const googleBtnAutoLogIn = () => {
         googleAutoLogIn()
-        .then(restult => {
-            console.log('your are success google logIn');
-            navigate('/')
-        })
+            .then(restult => {
+                console.log('your are success google logIn');
+                navigat('/')
+            })
     }
 
 
@@ -202,7 +209,7 @@ const Registrar = () => {
                     </div>
                     <p className='px-6 text-sm text-center text-gray-400 pb-3'>
                         Already have an account yet?{' '}
-                        <Link to='/login' href='#' className='hover:underline text-gray-600'>
+                        <Link to='/login'  className='hover:underline text-gray-600'>
                             Sign In
                         </Link>
                         .

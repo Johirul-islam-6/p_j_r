@@ -4,11 +4,13 @@ import { AuthContext } from '../Contexts/AuthProvider';
 
 const Navbar = () => {
 
-    const { user } = useContext(AuthContext)
-    console.log(user?.uid)
+    const { user, logOutPart } = useContext(AuthContext)
 
     const LogoutBtn = () =>{
-        
+        logOutPart()
+        .then(result =>{
+
+        }).catch(error => console.log(error))
     }
 
     return (
