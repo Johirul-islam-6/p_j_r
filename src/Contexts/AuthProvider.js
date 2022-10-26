@@ -13,6 +13,8 @@ const githubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
 
+    const [user, setUser] =useState(null)
+
     //   create email or password or update details---
     const createUsers = (email, pass) => {
         return createUserWithEmailAndPassword(auth, email, pass)
@@ -29,7 +31,7 @@ const AuthProvider = ({ children }) => {
 
     //Log out part
     const logOutPart = () =>{
-        
+        return signOut(auth)
     }
     //login part sing In
     const userSingInWithEmailPassword = (email, password) => {
@@ -47,7 +49,20 @@ const AuthProvider = ({ children }) => {
     }
 
 
-    const authInfo = { createUsers, updateDetails, emailVerification, googleAutoLogIn, userSingInWithEmailPassword, gitHubAutoLogIn }
+    const authInfo = { createUsers, updateDetails, emailVerification, googleAutoLogIn, userSingInWithEmailPassword, gitHubAutoLogIn, user, logOutPart }
+
+
+    //user ke lode korar jonno
+    useEffect( () => {
+        const unSubscribe = onAuthStateChanged(auth, user =>{
+            setUser(user);
+
+        })
+        return () => {
+            unSubscribe()
+        }
+    } , [])
+
 
     return (
         <AuthContext.Provider value={authInfo}>

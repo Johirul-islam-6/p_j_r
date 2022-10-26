@@ -1,13 +1,15 @@
-import React, { useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 
 const Login = () => {
-    const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn } = useContext(AuthContext)
+    const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn, user } = useContext(AuthContext)
 
     //location part 
     const navigate = useNavigate()
+    const location = useLocation()
+    const froms = location?.state?.from?.pathname || '/';
 
 
     const handelLogInBtn = (event) => {
@@ -20,7 +22,7 @@ const Login = () => {
         // Sing In part
         userSingInWithEmailPassword(email, password)
             .then(result => {
-                navigate('/courses')
+                navigate(froms, { replace: true })
             })
 
 
@@ -34,16 +36,22 @@ const Login = () => {
         googleAutoLogIn()
             .then(restult => {
                 console.log('your are success google logIn');
-                navigate('/')
+                navigate(froms, { replace: true })
             })
     }
     //Ghithub auto log in part
     const githubAutoLogIN = () =>{
         gitHubAutoLogIn()
         .then(result => {
-            navigate('/courses')
+            navigate(froms, { replace: true })
         })
     }
+
+    useEffect(() => {
+        if (user) {
+            navigate(froms, { replace: true })
+        }
+    }, [user])
 
 
 

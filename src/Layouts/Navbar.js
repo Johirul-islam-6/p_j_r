@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Contexts/AuthProvider';
 
 const Navbar = () => {
+
+    const { user } = useContext(AuthContext)
+    console.log(user?.uid)
+
+    const LogoutBtn = () =>{
+        
+    }
+
     return (
         <>
             <div className="navbar bg-slate-700 lg:px-10">
@@ -45,7 +54,7 @@ const Navbar = () => {
                 {/* -----------navbar-end text btn section--------- */}
                 <div className="navbar-end">
 
-    
+
                     <div className="hidden lg:block mr-5">
 
                         <ul className="lg-header menu menu-horizontal p-0">
@@ -53,7 +62,7 @@ const Navbar = () => {
                             <Link to='courses' className='btn'>Our Courses</Link>
                             <Link to='/about' className='btn ml-5'>About</Link>
 
-                            <label for="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
+                            <label htmlFor="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
                                 <span className='text-1xl text-bold'>Light</span>
                                 <span className="relative">
                                     <input id="Toggle1" type="checkbox" className="hidden peer" />
@@ -63,10 +72,17 @@ const Navbar = () => {
                                 <span>Dark</span>
                             </label>
 
-                            <Link to='/registration' className='btn mx-6'>Registrar</Link>
-                            <Link to='/login' className='btn'>Login</Link>
+                            {
+                                user?.uid ?
+                                    <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
+                                    :
+                                    <>
+                                        <Link to='/registration' className='btn mx-6'>Registrar</Link>
+                                        <Link to='/login' className='btn'>Login</Link>
+                                    </>
+                            }
 
-                            {/* <Link to='/' onClick='' id='logout' className='btn mx-4'>Log out</Link> */}
+
 
 
                         </ul>
@@ -78,10 +94,12 @@ const Navbar = () => {
                         <div className="w-7 rounded-full ring ring-primary
                          ring-offset-base-100 ring-offset-2">
 
-                            <img className='w-6 bg-slate-300' src='' />
-
-                            {/* <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" /> */}
-
+                            {
+                                user?.uid ?
+                                    <img className='w-6 bg-slate-300' src={user?.photoURL} />
+                                    :
+                                    <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" />
+                            }
                         </div>
                     </div>
 

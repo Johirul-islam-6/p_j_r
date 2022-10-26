@@ -8,6 +8,7 @@ import About from "../Pages/components/About";
 import Registrar from "../Pages/Login_Registar/Registrar";
 import Login from "../Pages/Login_Registar/Login";
 import ErrorPages from "../Pages/ErrorPagess/ErrorPages";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 
 
@@ -23,7 +24,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: <AllCourse></AllCourse>
+                element: ( <PrivetRoute> <AllCourse></AllCourse> </PrivetRoute>)
+                // element: <AllCourse></AllCourse>
+                
             },
            
             {
