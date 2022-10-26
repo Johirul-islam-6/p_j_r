@@ -3,11 +3,11 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            <section className="dark:bg-gray-800 dark:text-gray-100 lg:px-20 px-5 mb-10">
+            <section className="dark:bg-gray-800 dark:text-gray-100 lg:px-20 px-5">
                 <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
                     <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                        <h1 className="text-5xl font-bold leading-none sm:text-6xl">Ac mattis
-                            <span className="dark:text-violet-400">senectus</span>erat pharetra
+                        <h1 className="text-4xl font-bold leading-none sm:text-4xl lg:text-5xl">Web-Learning
+                            <span className="dark:text-violet-400">Bd senectus</span>erat pharetra
                         </h1>
                         <p className="mt-6 mb-8 text-lg sm:mb-12">Dictum aliquam porta in condimentum ac integer
                             <p className="hidden md:inline lg:hidden">turpis pulvinar, est scelerisque ligula sem</p>

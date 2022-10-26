@@ -4,11 +4,11 @@ import AllCourse from "../Pages/Courses/allCourse/AllCourse";
 import Cheakout from "../Pages/Courses/CheakOut/ChackOut";
 import Course_Details from "../Pages/Courses/Course_Details/Course_Details";
 import Home from '../Pages/components/Home'
-import About from "../Pages/components/About";
 import Registrar from "../Pages/Login_Registar/Registrar";
 import Login from "../Pages/Login_Registar/Login";
 import ErrorPages from "../Pages/ErrorPagess/ErrorPages";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
+import Block from "../Pages/components/Block";
 
 
 
@@ -24,12 +24,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/courses',
-                element: (
-                    <PrivetRoute><AllCourse></AllCourse></PrivetRoute>
-                )
-                    
-                // element: <AllCourse></AllCourse>
-
+                element: <AllCourse></AllCourse>
             },
 
             {
@@ -39,8 +34,8 @@ export const router = createBrowserRouter([
 
             },
             {
-                path: '/about',
-                element: <About></About>
+                path: '/block',
+                element: <Block></Block>
             },
             {
                 path: '/registration',
@@ -50,18 +45,19 @@ export const router = createBrowserRouter([
                 path: '/login',
                 element: <Login></Login>
             },
-            
-            {
-                path: '/servise',
-                element: <Course_Details></Course_Details>
-            },
             {
                 path: '/course_details',
                 element: <Course_Details></Course_Details>
             },
             {
                 path: '/chackout',
-                element: <Cheakout></Cheakout>
+                element: (
+                    <PrivetRoute>
+                        <Cheakout></Cheakout>
+                    </PrivetRoute>
+                ),
+                loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
+                 
             }
         ]
     }

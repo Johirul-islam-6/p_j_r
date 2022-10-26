@@ -37,7 +37,7 @@ const Navbar = () => {
                             <Link to='courses' className='btn'>Our Courses</Link>
                             <Link to='/project' className='btn mx-6'>our service</Link>
 
-                            <Link to='/about' className='btn'>About</Link>
+                            <Link to='/block' className='btn'>Block</Link>
                             <Link to='skill' className='btn mx-6'>Contact us</Link>
                             <Link to='/registration' className='btn mx-6'>Registrar</Link>
                             <Link to='/login' className='btn'>Login</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
                         <ul className="lg-header menu menu-horizontal p-0">
                             <Link to='/' className='btn mx-6'>Home</Link>
                             <Link to='courses' className='btn'>Our Courses</Link>
-                            <Link to='/about' className='btn ml-5'>About</Link>
+                            <Link to='/block' className='btn ml-5'>Block</Link>
 
                             <label htmlFor="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
                                 <span className='text-1xl text-bold'>Light</span>
@@ -74,22 +74,21 @@ const Navbar = () => {
                                 <span>Dark</span>
                             </label>
 
-                            {
-                                user?.uid ?
-                                    <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
-                                    :
-                                    <>
-                                        <Link to='/registration' className='btn mx-6'>Registrar</Link>
-                                        <Link to='/login' className='btn'>Login</Link>
-                                    </>
-                            }
-
-
-
+                           
 
                         </ul>
                     </div>
-
+                    <ul className="lg-header menu menu-horizontal p-0">
+                    {
+                        user?.uid ?
+                            <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
+                            :
+                            <>
+                                <Link to='/registration' className='btn ml-3 mr-2 LogRegBtn'>Registrar</Link>
+                                    <Link to='/login' className='btn mr-3'>Login</Link>
+                            </>
+                    }
+                    </ul>
 
                     {/* ----------you profile start----------- */}
                     <div id='avatar' className="avatar online placeholder mr-2 ">

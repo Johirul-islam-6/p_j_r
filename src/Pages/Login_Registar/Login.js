@@ -10,7 +10,7 @@ const Login = () => {
     const navigat = useNavigate()
     const location = useLocation()
     const froms = location?.state?.from?.pathname || '/';
-    console.log(froms);
+    // console.log(froms);
 
 
     const handelLogInBtn = (event) => {
