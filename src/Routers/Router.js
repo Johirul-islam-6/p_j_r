@@ -55,9 +55,7 @@ export const router = createBrowserRouter([
                     <PrivetRoute>
                         <Cheakout></Cheakout>
                     </PrivetRoute>
-                ),
-                loader: ({ params }) => fetch(`http://localhost:5000/course/${params.id}`)
-                 
+                ) 
             }
         ]
     }

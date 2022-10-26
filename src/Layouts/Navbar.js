@@ -35,12 +35,7 @@ const Navbar = () => {
                         <ul tabIndex={0} className="lg-header hiside menu menu-compact dropdown-content  p-2  shadow bg-slate-700  rounded-box w-60  lg:hidden">
                             <Link to='/' className='btn mx-6'>Home</Link>
                             <Link to='courses' className='btn'>Our Courses</Link>
-                            <Link to='/project' className='btn mx-6'>our service</Link>
-
-                            <Link to='/block' className='btn'>Block</Link>
-                            <Link to='skill' className='btn mx-6'>Contact us</Link>
-                            <Link to='/registration' className='btn mx-6'>Registrar</Link>
-                            <Link to='/login' className='btn'>Login</Link>
+                            <Link to='/block' className='btn mx-6'>Block</Link>
                         </ul>
                     </div>
                 </div>
@@ -84,7 +79,7 @@ const Navbar = () => {
                             <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
                             :
                             <>
-                                <Link to='/registration' className='btn ml-3 mr-2 LogRegBtn'>Registrar</Link>
+                                <Link to='/registration' className='btn ml-3 mr-2 lg:mx-5'>Registrar</Link>
                                     <Link to='/login' className='btn mr-3'>Login</Link>
                             </>
                     }

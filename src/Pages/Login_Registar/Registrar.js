@@ -6,9 +6,8 @@ import { AuthContext } from '../../Contexts/AuthProvider';
 
 const Registrar = () => {
 
-    const navigat = useNavigate();
-    const { createUsers, updateDetails, emailVerification, googleAutoLogIn } = useContext(AuthContext);
-
+    const { createUsers, updateDetails, emailVerification, googleAutoLogIn, gitHubAutoLogIn } = useContext(AuthContext);
+    const navigat = useNavigate()
 
     const [error, setError] = useState();
     const [successRegistion, setSuccess] = useState();
@@ -54,14 +53,11 @@ const Registrar = () => {
             setSuccess("You are success Registration 👍👍")
         }
         // ------condition end--------
-        //create email password auth function call
+        //create email password auth function c
         createUsers(email, password)
             .then(result => {
                 console.log("first user", result.user);
-                setTimeout(() => {
-                    navigat('/login')
-                }, 1500);
-                console.log('login page');
+                navigat('/login')
                 updateDetails(userName, profilePhoto)
                     .then(result => {
                         alert("update Your Details or Information")
@@ -78,6 +74,7 @@ const Registrar = () => {
 
             }).catch(error => console.log(error))
 
+
     }
 
     //Google btn auto logIn 
@@ -85,8 +82,16 @@ const Registrar = () => {
         googleAutoLogIn()
             .then(restult => {
                 console.log('your are success google logIn');
-                navigat('/')
+                navigat('/courses')
             })
+    }
+
+    //Github Handel btn 
+    const gitHubHandelBtn = () => {
+        gitHubAutoLogIn()
+            .then(result => {
+                navigat('/courses')
+            }).catch(error => console.log(error))
     }
 
 
@@ -203,13 +208,13 @@ const Registrar = () => {
                         <button aria-label='Log in with Twitter' className='p-3 rounded-sm'>
                             <h1 className='text-3xl text-blue-700'><FaFacebook></FaFacebook></h1>
                         </button>
-                        <button aria-label='Log in with GitHub' className='p-3 rounded-sm'>
+                        <button onClick={gitHubHandelBtn} aria-label='Log in with GitHub' className='p-3 rounded-sm'>
                             <h1 className='text-2xl'><FaGithub></FaGithub></h1>
                         </button>
                     </div>
                     <p className='px-6 text-sm text-center text-gray-400 pb-3'>
                         Already have an account yet?{' '}
-                        <Link to='/login'  className='hover:underline text-gray-600'>
+                        <Link to='/login' href='#' className='hover:underline text-gray-600'>
                             Sign In
                         </Link>
                         .

@@ -128,7 +128,7 @@ const Login = () => {
                         <h1 className='text-2xl'><FaGoogle></FaGoogle></h1>
                     </button>
 
-                    <button aria-label='Log in with Twitter' className='p-3 rounded-sm'>
+                    <button aria-label='Log in with Facbook' className='p-3 rounded-sm'>
                         <h1 className='text-3xl text-blue-700'><FaFacebook></FaFacebook></h1>
                     </button>
 
