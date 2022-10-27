@@ -9,11 +9,11 @@ import { useEffect, useState } from 'react';
 const Course_Details = () => {
 
     const singelCourse = useLoaderData()
-    // console.log(singelCourse);
+    console.log(singelCourse);
     const courseName = singelCourse?.course_name;
     const pdfImage = singelCourse?.course_photo;
     const Paragraps = singelCourse?.Paragrap;
-    console.log(pdfImage);
+    // console.log(pdfImage);
 
     const pdfGenerate = () => {
 
@@ -54,7 +54,7 @@ const Course_Details = () => {
                             </p>
                         </div>
                         {/* <p className="dark:text-gray-100 px-36">{singelCourse.Paragrap}</p> */}
-                        <Link to='/chackout'>
+                        <Link to={`/chackout/${singelCourse?._id}`}>
                             <button type="button" className=" flex items-center justify-center w-full p-3 font-semibold
                                  tracking-wide rounded-md dark:bg-violet-500 hover:bg-violet-400 dark:text-white text-bold">
                                     Get Premiun Access 

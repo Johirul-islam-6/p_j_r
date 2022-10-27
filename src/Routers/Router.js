@@ -57,12 +57,13 @@ export const router = createBrowserRouter([
                 element: <Course_Details></Course_Details>
             },
             {
-                path: '/chackout',
+                path: '/chackout/:id',
                 element: (
                     <PrivetRoute>
                         <Cheakout></Cheakout>
                     </PrivetRoute>
-                ) 
+                ),
+                 loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/course/${params.id}`)
                
             }
         ]

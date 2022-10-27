@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Contexts/AuthProvider';
 import Logo from '../assent/logo/web.png'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Navbar = () => {
 
@@ -11,7 +12,7 @@ const Navbar = () => {
     const LogoutBtn = () =>{
         logOutPart()
         .then(result =>{
-
+            toast.success('You are Successfully Log Out!');
         }).catch(error => console.log(error))
     }
 

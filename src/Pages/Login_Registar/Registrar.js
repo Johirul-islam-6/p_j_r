@@ -83,7 +83,7 @@ const Registrar = () => {
         googleAutoLogIn()
             .then(restult => {
                 navigates('/courses')
-                toast.success('🦄 You are Successfully Log in Google!');
+                toast.success(' You are Successfully Log in Google!');
             })
     }
 
@@ -92,7 +92,7 @@ const Registrar = () => {
         gitHubAutoLogIn()
             .then(result => {
                 navigates('/courses')
-                toast.success('🦄 You are Successfully Log in GitHub!');
+                toast.success('You are Successfully Log in GitHub!');
             }).catch(error => console.log(error))
     }
 
