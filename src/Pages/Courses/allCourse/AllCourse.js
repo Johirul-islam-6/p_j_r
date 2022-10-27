@@ -6,7 +6,7 @@ const AllCourse = () => {
 
     const [courses, setCourse] = useState([]);
     useEffect(() => {
-      //server fetch
+        //server fetch
         fetch('https://web-technology-server-site.vercel.app/course')
             .then(result => result.json())
             .then(data => setCourse(data))
@@ -19,7 +19,7 @@ const AllCourse = () => {
             {/* <div>Hello {courses.length}</div> */}
             {/* ---------card------ */}
             <div className="container  mt-6 mx-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 ">
 
                     {
                         courses.map(courses => <CourseCard course={courses} key={courses._id}></CourseCard>)

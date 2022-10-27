@@ -7,8 +7,8 @@ const CourseCard = ({ course }) => {
     return (
         <>
           
-                <div className="card lg:w-96 bg-base-100 shadow-xl my-5">
-                    <figure><img className='' src={course?.course_photo} alt="Shoes" /></figure>
+            <div className="card px-2 lg:w-96 bg-base-100 shadow-xl my-5 md:mx-3 md:px-2 sm:px-2 drop-shadow-[0_35px_35px_rgba(10,0,3,.25)] hover:bg-base-200">
+                    <figure><img className='pt-2 rounded-xl' src={course?.course_photo} alt="Shoes" /></figure>
                     <div className="card-body p-0 py-5 lg:p-8">
                         <h2 className="card-title text-blue-200 text-sm lg:text-2xl">
                              {course?.title}
