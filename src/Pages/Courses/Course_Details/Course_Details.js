@@ -3,8 +3,8 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { FaDownload, FaJsSquare, IconName } from "react-icons/fa";
 import jsPDF from 'jspdf';
 import logo from '../../../assent/logo/web.png'
-import Cheakout from '../CheakOut/ChackOut';
 import { useEffect, useState } from 'react';
+import AOS from 'aos';
 
 const Course_Details = () => {
 
@@ -26,11 +26,15 @@ const Course_Details = () => {
         doc.text(20, 30, "Details information : " + Paragraps,)
         doc.save('file.pdf')
     }
+    //animation 
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
         <>
             <div className='flex justify-center mt-5 px-4'>
-                <div className=" rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 ">
+                <div data-aos="zoom-in-up" className=" rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     {/* -------header start--------- */}
                     <div className="flex items-center justify-between p-3">
                         <div className="flex items-center space-x-2">

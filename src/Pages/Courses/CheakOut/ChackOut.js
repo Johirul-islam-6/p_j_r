@@ -2,8 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import CourseCard from '../allCourse/CourseCard';
+import AOS from 'aos'
 
 const Cheakout = () => {
+
+    //animation
+    useEffect( () =>{
+        AOS.init();
+    } ,[])
 
     const chackoutCourse = useLoaderData()
     // console.log(chackoutCourse?.price03);
@@ -32,7 +38,7 @@ const Cheakout = () => {
                         <h2 className="text-4xl font-bold lg:text-5xl ">Choose your best Offer</h2>
                     </div>
                     <div className="flex flex-wrap items-stretch -mx-4">
-                        <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 drop-shadow-[0_35px_35px_rgba(110,0,3,0.25)]">
+                        <div data-aos="fade-right" className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 drop-shadow-[0_35px_35px_rgba(110,0,3,0.25)]">
                             <div className="flex flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-900">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold">Beginner</h4>
@@ -74,7 +80,7 @@ const Cheakout = () => {
                                 <button onClick={successfull1} type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-400 hover:bg-violet-300 dark:text-white ">Get Started</button>
                             </div>
                         </div>
-                        <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+                        <div data-aos="fade-down" className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
                             <div className="flex flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-slate-700 dark:text-gray-900">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold text-white">Pro</h4>
@@ -118,7 +124,7 @@ const Cheakout = () => {
                                 <a onClick={successfull2} rel="noopener noreferrer" href="#" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-400 hover:bg-violet-300 dark:text-white">Get Started</a>
                             </div>
                         </div>
-                        <div className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 drop-shadow-[0_35px_35px_rgba(110,0,3,0.25)]">
+                        <div data-aos="fade-left" className="w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0 drop-shadow-[0_35px_35px_rgba(110,0,3,0.25)]">
                             <div className="p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-900">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold">Professional</h4>

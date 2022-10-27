@@ -4,6 +4,7 @@ import './App.css';
 import { router } from './Routers/Router';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import 'aos/dist/aos.css';
 
 function App() {
   return (<>
