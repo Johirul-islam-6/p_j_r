@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../Contexts/AuthProvider';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 const Registrar = () => {
@@ -59,7 +60,17 @@ const Registrar = () => {
                 navigates('/login');
                 updateDetails(userName, profilePhoto)
                     .then(result => {
-                        alert("update Your Details or Information")
+                        // alert("update Your Details or Information")
+                        // toast.success('🦄 Wow so easy!', {
+                        //     position: "top-center",
+                        //     autoClose: 5000,
+                        //     hideProgressBar: false,
+                        //     closeOnClick: true,
+                        //     pauseOnHover: true,
+                        //     draggable: true,
+                        //     progress: undefined,
+                        //     theme: "light",
+                        // });
 
                         emailVerification()
                             .then(result => {

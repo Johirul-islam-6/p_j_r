@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="navbar bg-slate-700 lg:px-10">
+            <div className="navbar bg-slate-700 lg:px-3">
                 {/* -------------navbar start------------ */}
                 <div className="navbar-start ">
                     {/* ---------logo show lg:--------- */}
@@ -36,8 +36,9 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="lg-header hiside menu menu-compact dropdown-content  p-2  shadow bg-slate-700  rounded-box w-60  lg:hidden">
                             <Link to='/' className='btn mx-6'>Home</Link>
-                            <Link to='courses' className='btn'>Our Courses</Link>
+                            <Link to='/courses' className='btn'>Our Courses</Link>
                             <Link to='/block' className='btn mx-6'>Block</Link>
+                            <Link to='/faq' className='btn'>FAQ</Link>
                         </ul>
                     </div>
                 </div>
@@ -51,16 +52,17 @@ const Navbar = () => {
                     </div>
                 </div>
                 {/* -----------navbar-end text btn section--------- */}
-                <div className="navbar-end">
+                <div className="navbar-end ">
 
                     <div className="hidden lg:block mr-5">
 
                         <ul className="lg-header menu menu-horizontal p-0">
                             <Link to='/' className='btn mx-6'>Home</Link>
                             <Link to='courses' className='btn'>Our Courses</Link>
-                            <Link to='/block' className='btn ml-5'>Block</Link>
+                            <Link to='/block' className='btn mx-4'>Block</Link>
+                            <Link to='/faq' className='btn'>FAQ</Link>
 
-                            <label htmlFor="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
+                            <label htmlFor="Toggle1" className="ml-4 items-center space-x-4 cursor-pointer dark:text-gray-100 hidden lg:inline-flex">
                                 <span className='text-1xl text-white text-bold'>Light</span>
                                 <span className="relative">
                                     <input id="Toggle1" type="checkbox" className="hidden peer" />
@@ -70,17 +72,27 @@ const Navbar = () => {
                                 <span className='text-white'>Dark</span>
                             </label>
 
-                           
+                            <ul className="lg-header menu menu-horizontal p-0 hidden lg:flex">
+                                {
+                                    user?.uid ?
+                                        <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-2 ml-4'>Log out</Link>
+                                        :
+                                        <>
+                                            <Link to='/registration' className='btn mx-3'>Registrar</Link>
+                                            <Link to='/login' className='btn mr-3'>Login</Link>
+                                        </>
+                                }
+                            </ul>
 
                         </ul>
                     </div>
-                    <ul className="lg-header menu menu-horizontal p-0">
+                    <ul className="lg-header menu menu-horizontal p-0 lg:hidden flex ">
                     {
                         user?.uid ?
                             <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
                             :
                             <>
-                                <Link to='/registration' className='btn ml-3 mr-2 lg:mx-5'>Registrar</Link>
+                                <Link to='/registration' className='btn ml-3 mr-2 lg:mx-1'>Registrar</Link>
                                     <Link to='/login' className='btn mr-3'>Login</Link>
                             </>
                     }
@@ -132,6 +144,16 @@ const Navbar = () => {
                                             </svg>
                                         </a>
                                     </div>
+                                    {/* -------------------dard theme or light theme-------------------- */}
+                                    <label htmlFor="Toggle2" className="ml-4 items-center space-x-4 cursor-pointer dark:text-gray-100 inline-flex pt-3 lg:hidden">
+                                        <span className='text-1xl text-white text-bold'>Light</span>
+                                        <span className="relative">
+                                            <input id="Toggle2" type="checkbox" className="hidden peer" />
+                                            <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400"></div>
+                                            <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
+                                        </span>
+                                        <span className='text-white'>Dark</span>
+                                    </label>
                                 </div>
                             </div>
                         </ul>

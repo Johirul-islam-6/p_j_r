@@ -9,6 +9,7 @@ import Login from "../Pages/Login_Registar/Login";
 import ErrorPages from "../Pages/ErrorPagess/ErrorPages";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import Block from "../Pages/components/Block";
+import Faq from "../Pages/components/Faq";
 
 
 
@@ -36,6 +37,11 @@ export const router = createBrowserRouter([
             {
                 path: '/block',
                 element: <Block></Block>
+            },
+          
+            {
+                path: '/faq',
+                element: <Faq></Faq>
             },
           
             {
