@@ -34,7 +34,7 @@ const Course_Details = () => {
     return (
         <>
             <div className='flex justify-center mt-5 px-4'>
-                <div data-aos="zoom-in-up" className=" rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 ">
+                <div data-aos="zoom-in-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200" className=" rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 ">
                     {/* -------header start--------- */}
                     <div className="flex items-center justify-between p-3">
                         <div className="flex items-center space-x-2">
@@ -44,7 +44,7 @@ const Course_Details = () => {
                                 <span className="inline-block text-xs leading-none dark:text-gray-400">@web-developer</span>
                             </div>
                         </div>
-                        <button onClick={pdfGenerate} title="Open options" type="button" className='hover:dark:text-violet-400'>
+                        <button data-aos="zoom-in" onClick={pdfGenerate} title="Open options" type="button" className='hover:dark:text-violet-400'>
                             <span className='flex align-middle'><p className='mr-1'>Download Pdf</p> <FaDownload className='mt-1 ml-1'></FaDownload></span>
                         </button>
                     </div>

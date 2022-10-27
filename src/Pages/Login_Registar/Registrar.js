@@ -1,14 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { ToastContainer, toast } from 'react-toastify';
+import AOS from 'aos';
 
 
 const Registrar = () => {
 
     const { createUsers, updateDetails, emailVerification, googleAutoLogIn, gitHubAutoLogIn } = useContext(AuthContext);
-    const navigates= useNavigate()
+    const navigates = useNavigate()
 
     const [error, setError] = useState();
     const [successRegistion, setSuccess] = useState();
@@ -95,11 +96,15 @@ const Registrar = () => {
                 toast.success('You are Successfully Log in GitHub!');
             }).catch(error => console.log(error))
     }
+    //animation 
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
 
     return (
         <>
-            <div className='reGistration flex justify-center items-center pt-5 mx-5'>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" className='reGistration flex justify-center items-center pt-5 mx-5'>
                 <div className='flex flex-col max-w-md  rounded-md sm:px-10 px-7 sm:py-3 py-1 bg-gray-100 text-gray-900'>
                     <div className='mb-3 text-center'>
                         <h1 className='mb-1 mt-1 text-4xl font-bold text-gray-900'><span className='text-amber-700'>Re</span>gister</h1>

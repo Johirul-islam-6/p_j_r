@@ -13,7 +13,7 @@ const CourseCard = ({ course }) => {
 
     return (
         <>
-            <div data-aos="zoom-in-left" className="card  my-5 px-2 lg:w-96 bg-base-100 shadow-xl  md:mx-3 md:px-2 sm:px-2  drop-shadow-[0_35px_35px_rgba(10,0,3,.25)] hover:bg-base-200">
+            <div data-aos="zoom-in-left" data-aos-easing="ease-out-cubic" data-aos-duration="1200" className="card  my-5 px-2 lg:w-96 bg-base-100 shadow-xl  md:mx-3 md:px-2 sm:px-2  drop-shadow-[0_35px_35px_rgba(10,0,3,.25)] hover:bg-base-200">
                     <figure><img className='pt-2 rounded-xl' src={course?.course_photo} alt="Shoes" /></figure>
                 <div className="card-body p-0 py-5 lg:p-8 ">
                         <h2 className="card-title text-blue-200 text-sm lg:text-2xl">

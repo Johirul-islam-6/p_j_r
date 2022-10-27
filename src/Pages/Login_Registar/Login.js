@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify'; 
+import AOS from 'aos';
 
 const Login = () => {
     const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn, user } = useContext(AuthContext)
@@ -64,11 +65,16 @@ const Login = () => {
         }
     }, [user])
 
-
+    //animation 
+    useEffect(() => {
+        setTimeout(() => {
+            AOS.init();
+        }, );
+    }, [])
 
 
     return (
-        <div className='flex justify-center items-center pt-8 mx-5'>
+        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200" className='flex justify-center items-center pt-8 mx-5'>
             <div className='flex flex-col max-w-md px-6 py-2 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
                 <div className='mb-8 text-center'>
                     <h1 className='my-3 text-4xl font-bold'><span className='text-amber-700'>Si</span>ng in</h1>

@@ -1,24 +1,30 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../Contexts/AuthProvider';
 import Logo from '../assent/logo/web.png'
 import { ToastContainer, toast } from 'react-toastify';
-
+import AOS from 'aos';
 const Navbar = () => {
 
     const { user, logOutPart } = useContext(AuthContext)
     // console.log(user);
 
-    const LogoutBtn = () =>{
+    const LogoutBtn = () => {
         logOutPart()
-        .then(result =>{
-            toast.success('You are Successfully Log Out!');
-        }).catch(error => console.log(error))
+            .then(result => {
+                toast.success('You are Successfully Log Out!');
+            }).catch(error => console.log(error))
     }
+    //animation 
+    useEffect(() => {
+
+        AOS.init();
+
+    }, [])
 
     return (
         <>
-            <div className="navbar bg-slate-700 lg:px-3">
+            <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="navbar bg-slate-700 lg:px-3">
                 {/* -------------navbar start------------ */}
                 <div className="navbar-start ">
                     {/* ---------logo show lg:--------- */}
@@ -31,11 +37,11 @@ const Navbar = () => {
                         </div>
                     </div>
                     {/* ------ toggle droup down -------------- */}
-                    <div className="dropdown lg:hidden">
+                    <div className="dropdown lg:hidden z-50">
                         <label tabIndex={0} className="btn btn-ghost btn-circle text-white mr-2">
                             <svg xmlns="" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                         </label>
-                        <ul tabIndex={0} className="lg-header hiside menu menu-compact dropdown-content  p-2  shadow bg-slate-700  rounded-box w-60  lg:hidden">
+                        <ul data-aos="fade-right" tabIndex={0} className="lg-header hiside menu menu-compact dropdown-content  p-2  shadow bg-slate-700  rounded-box w-60  lg:hidden z-40">
                             <Link to='/' className='btn mx-6'>Home</Link>
                             <Link to='/courses' className='btn'>Our Courses</Link>
                             <Link to='/block' className='btn mx-6'>Block</Link>
@@ -88,19 +94,19 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <ul className="lg-header menu menu-horizontal p-0 lg:hidden flex ">
-                    {
-                        user?.uid ?
-                            <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
-                            :
-                            <>
-                                <Link to='/registration' className='btn ml-3 mr-2 lg:mx-1'>Registrar</Link>
+                        {
+                            user?.uid ?
+                                <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
+                                :
+                                <>
+                                    <Link to='/registration' className='btn ml-3 mr-2 lg:mx-1'>Registrar</Link>
                                     <Link to='/login' className='btn mr-3'>Login</Link>
-                            </>
-                    }
+                                </>
+                        }
                     </ul>
 
                     {/* ----------you profile start----------- */}
-                   
+
                     <div id='avatar' className="avatar online placeholder mr-2 dropdown dropdown-end">
                         <div tabIndex={0} className="w-7 rounded-full ring ring-primary
                          ring-offset-base-100 ring-offset-2">
@@ -112,16 +118,16 @@ const Navbar = () => {
                                     <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" />
                             }
                         </div>
-                        
+
                         <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 mt-5 ">
                             <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-                                {user?.uid ? <img src={user?.photoURL} alt="" className="w-10 h-6 mx-auto rounded-full dark:bg-gray-500 aspect-square" /> : <p className='text-center text-amber-500'>Log in N ow</p>}     
+                                {user?.uid ? <img src={user?.photoURL} alt="" className="w-10 h-6 mx-auto rounded-full dark:bg-gray-500 aspect-square" /> : <p className='text-center text-amber-500'>Log in N ow</p>}
                                 <div className="space-y-4 text-center divide-y divide-gray-700">
                                     <div className="my-2 space-y-1">
                                         <h2 className="text-xl font-semibold sm:text-2xl">{user?.displayName}</h2>
                                         <p className="px-5 text-xs sm:text-base dark:text-gray-400">{user?.email}</p>
                                         <p className="px-5 text-xs sm:text-base dark:text-gray-400">Last Sing in : {user?.metadata?.lastSignInTime}</p>
-                                       
+
                                     </div>
                                     <div className="flex justify-center pt-2 space-x-4 align-center">
                                         <a rel="noopener noreferrer" href="#" aria-label="GitHub" className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400">
