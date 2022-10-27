@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Login = () => {
     const { userSingInWithEmailPassword, googleAutoLogIn, gitHubAutoLogIn, user } = useContext(AuthContext)
@@ -26,8 +27,9 @@ const Login = () => {
         // Sing In part
         userSingInWithEmailPassword(email, password)
             .then(result => {
+                toast.success('🦄 You are Successfully Log in !');
                 navigat(froms, { replace: true })
-            }).catch(error => console.log(error))
+            }).catch(error => toast.error("🦄Did't match you Password!", error))
 
         setTimeout(() => {
             if (!password) {
@@ -43,7 +45,7 @@ const Login = () => {
     const googleBtnAutoLogIn = () => {
         googleAutoLogIn()
             .then(restult => {
-                console.log('your are success Auto logIn in Google');
+                toast.success('🦄 You are Successfully Log in Google !');
                 navigat(froms, { replace: true })
             }).catch(error => console.log(error))
     }
@@ -51,6 +53,7 @@ const Login = () => {
     const githubAutoLogIN = () => {
         gitHubAutoLogIn()
             .then(result => {
+                toast.success('🦄 You are Successfully Log in GitHub !');
                 navigat(froms, { replace: true })
             }).catch(error => console.log(error))
     }

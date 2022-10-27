@@ -1,19 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import CourseCard from '../allCourse/CourseCard';
 
 const Cheakout = () => {
-    const singelCourse = useLoaderData()
-   const navigat = useNavigate()
+    // const singelCourse = useLoaderData()
+    const [courseInfo, setCourseInfo] = useState();
 
-    const successfull1 = () =>{
+    // useEffect(() => {
+    //     fetch(`https://web-technology-server-site.vercel.app/course/${params.id}`
+    //         .then(res => res.json())
+    //         .then(data => setCourseInfo(data))
+    // }, [])
+
+    console.log(courseInfo)
+
+
+    const navigat = useNavigate()
+
+    const successfull1 = () => {
+        alert('"You are success full add Best offer .Thenk you"');
+        // alert("You are success full add Best offer .Thenk you")
+        navigat('/')
+    }
+    const successfull2 = () => {
         alert("You are success full add Best offer .Thenk you")
         navigat('/')
     }
-    const successfull2 = () =>{
-        alert("You are success full add Best offer .Thenk you")
-        navigat('/')
-    }
-    const successfull3 = () =>{
+    const successfull3 = () => {
         alert("You are success full add Best offer .Thenk you")
         navigat('/')
     }

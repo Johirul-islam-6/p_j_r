@@ -61,20 +61,11 @@ const Registrar = () => {
                 updateDetails(userName, profilePhoto)
                     .then(result => {
                         // alert("update Your Details or Information")
-                        // toast.success('🦄 Wow so easy!', {
-                        //     position: "top-center",
-                        //     autoClose: 5000,
-                        //     hideProgressBar: false,
-                        //     closeOnClick: true,
-                        //     pauseOnHover: true,
-                        //     draggable: true,
-                        //     progress: undefined,
-                        //     theme: "light",
-                        // });
+                        toast.success('🦄 You are Successfully Registration !');
 
                         emailVerification()
                             .then(result => {
-                                alert('Please cheack email. then visite your email verification link !')
+                                // alert('Please cheack email. then visite your email verification link !')
 
                             }).catch(error => console.log(error))
 
@@ -91,8 +82,8 @@ const Registrar = () => {
     const googleBtnAutoLogIn = () => {
         googleAutoLogIn()
             .then(restult => {
-                console.log('your are success google logIn');
                 navigates('/courses')
+                toast.success('🦄 You are Successfully Log in Google!');
             })
     }
 
@@ -101,6 +92,7 @@ const Registrar = () => {
         gitHubAutoLogIn()
             .then(result => {
                 navigates('/courses')
+                toast.success('🦄 You are Successfully Log in GitHub!');
             }).catch(error => console.log(error))
     }
 
