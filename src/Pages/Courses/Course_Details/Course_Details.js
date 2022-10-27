@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { FaDownload, FaJsSquare, IconName } from "react-icons/fa";
 import jsPDF from 'jspdf';
 import logo from '../../../assent/logo/web.png'
+import Cheakout from '../CheakOut/ChackOut';
 import { useEffect, useState } from 'react';
 
 const Course_Details = () => {
@@ -53,7 +54,12 @@ const Course_Details = () => {
                             </p>
                         </div>
                         {/* <p className="dark:text-gray-100 px-36">{singelCourse.Paragrap}</p> */}
-                        <Link to='/chackout'><button type="button" className=" flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-500 hover:bg-violet-400 dark:text-white text-bold">Get Premiun Access</button></Link>
+                        <Link to='/chackout'>
+                            <button type="button" className=" flex items-center justify-center w-full p-3 font-semibold
+                                 tracking-wide rounded-md dark:bg-violet-500 hover:bg-violet-400 dark:text-white text-bold">
+                                    Get Premiun Access 
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
