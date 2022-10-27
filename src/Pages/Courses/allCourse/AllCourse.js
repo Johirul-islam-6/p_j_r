@@ -6,15 +6,15 @@ const AllCourse = () => {
 
     const [courses, setCourse] = useState([]);
     useEffect(() => {
-
-        fetch('http://localhost:5000/course')
+      //server fetch
+        fetch('https://web-technology-server-site.vercel.app/course')
             .then(result => result.json())
             .then(data => setCourse(data))
 
     }, [])
 
     return (
-        
+
         <div className='flex'>
             {/* <div>Hello {courses.length}</div> */}
             {/* ---------card------ */}

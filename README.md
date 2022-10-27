@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Getting Started with Create Dynamic WebSite Data lode.
+# Hi, Web Hero ! 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+01.This project create `React` site link or deatails : [ React App install](https://reactjs.org/docs/create-a-new-react-app.html).
 
-## Available Scripts
+02.This project was `tawilwnd` css with [tailwindcss install site link](https://tailwindcss.com/docs/installation).
 
-In the project directory, you can run:
+03.This project was tawilwnd library `DaisyUi` with [ DaisyUi css install site link](https://daisyui.com/components/navbar/).
 
-### `npm start`
+04.This project was backend data lode `Firebase` with [ Firebase Documention or install site link](https://console.firebase.google.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+05.This project was `Vercel` Server site Data with [Vercel install site link](https://vercel.com/dashboard).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+06.This project was `GitHub push` Code Store Site  with [Github Repository create site link](https://github.com/).
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 🛠 Skills
 
-### `npm run build`
+* React js,
+* JavaScript,
+* Express.Js
+* Firebase
+* Vercel Server site
+* Api Lode Data
+* GitHub
+* Css Library 
+* Or Responsive
+* etc.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## `01.Step will Create Font Design Or LayOut.`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I will create Layout Designe fully full responsive site.
+or mining full name in [Side The Code](//http:). 
 
-### `npm run eject`
+## `02.Authentication Security  in You Client Site.`
+Authentication is a very important every client site.So that why I used
+firebase Document stracture follo or apply authentication security [Firebase.com](https://console.firebase.google.com/) for more information. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## `03.Daynamic Data Load`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I will Use Server site versel.com this site uplode my Server site file. or versel give at this datas link [versel Api Data Convert link ](https://web-technology-server-site.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## `04.Server site Data Use Client site`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Note: I will note every modiuls in web-programming Video or use assignment-10 !**
 
-## Learn More
+I will fetch(https://web-technology-server-site.vercel.app/) Data
+```javaScript
+  const [courses, setCourse] = useState([]);
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  console.log(courses,"Data")
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    useEffect(() => {
+        //Server site respons
+        fetch('https://web-technology-server-site.vercel.app/course')
+            .then(result => result.json())
+            .then(data => setCourse(data))
 
-### Code Splitting
+    }, [])
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+`or React hook (`Loader`) used Route Definetion`
+```javaScript
+  {
+     path: '/courses/:id',
+     element: <Course_Details></Course_Details>,
+                loader: ({ params }) => fetc(`https://web-technology-server-site.vercel.app/course/${params.id}`)
 
-### Analyzing the Bundle Size
+            }
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+` Create router or privetRoute _`
+```javaScript
+  export const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Main></Main>,
+        errorElement: <ErrorPages></ErrorPages>,
+        children: [ 
+             {
+                path: '/chackout',
+                element: (
+                    //this is privetRoute Protection
+                    <PrivetRoute>
+                        <Cheakout></Cheakout>
+                    </PrivetRoute>
+                ) 
+            }
+        ]
+    }
+  )]
 
-### Making a Progressive Web App
+```
+`or Catch than Loder Data another Pages _`
+```javaScript
+  {
+      const singelCourse = useLoaderData()
+      console.log(singelcourse, "datas comming another page")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+            }
 
-### Advanced Configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## `04.Step Conditional SteatMent ? true : false`
 
-### Deployment
+```javascript
+   {
+      user?.uid ?
+          <Link to='/' onClick={LogoutBtn} id='logout' className='btn mx-4'>Log out</Link>
+                :
+                  <>
+                     <Link to='/registration' className='btn ml-3 mr-2 lg:mx-5'>Registrar</Link>
+                     <Link to='/login' className='btn mr-3'>Login</Link>
+                  </>
+                    
+                    }
+```
+## `Or I will another Component etc. I mean say Hard work Is very importent is learning`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

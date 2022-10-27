@@ -6,7 +6,7 @@ import Logo from '../assent/logo/web.png'
 const Navbar = () => {
 
     const { user, logOutPart } = useContext(AuthContext)
-    console.log(user);
+    // console.log(user);
 
     const LogoutBtn = () =>{
         logOutPart()
@@ -53,7 +53,6 @@ const Navbar = () => {
                 {/* -----------navbar-end text btn section--------- */}
                 <div className="navbar-end">
 
-
                     <div className="hidden lg:block mr-5">
 
                         <ul className="lg-header menu menu-horizontal p-0">
@@ -62,13 +61,13 @@ const Navbar = () => {
                             <Link to='/block' className='btn ml-5'>Block</Link>
 
                             <label htmlFor="Toggle1" className="inline-flex ml-5 items-center space-x-4 cursor-pointer dark:text-gray-100">
-                                <span className='text-1xl text-bold'>Light</span>
+                                <span className='text-1xl text-white text-bold'>Light</span>
                                 <span className="relative">
                                     <input id="Toggle1" type="checkbox" className="hidden peer" />
                                     <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400"></div>
                                     <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
                                 </span>
-                                <span>Dark</span>
+                                <span className='text-white'>Dark</span>
                             </label>
 
                            
@@ -100,9 +99,10 @@ const Navbar = () => {
                                     <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" />
                             }
                         </div>
+                        
                         <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-64 mt-5 ">
                             <div className="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100">
-                                <img src={user?.photoURL} alt="" className="w-10 h-6 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
+                                {user?.uid ? <img src={user?.photoURL} alt="" className="w-10 h-6 mx-auto rounded-full dark:bg-gray-500 aspect-square" /> : <p className='text-center text-amber-500'>Log in N ow</p>}     
                                 <div className="space-y-4 text-center divide-y divide-gray-700">
                                     <div className="my-2 space-y-1">
                                         <h2 className="text-xl font-semibold sm:text-2xl">{user?.displayName}</h2>

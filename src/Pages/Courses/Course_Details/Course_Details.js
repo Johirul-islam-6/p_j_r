@@ -1,11 +1,30 @@
 
 import { Link, useLoaderData } from 'react-router-dom';
 import { FaDownload, FaJsSquare, IconName } from "react-icons/fa";
+import jsPDF from 'jspdf';
+import logo from '../../../assent/logo/web.png'
+import { useEffect, useState } from 'react';
 
 const Course_Details = () => {
 
     const singelCourse = useLoaderData()
+    // console.log(singelCourse);
+    const courseName = singelCourse?.course_name;
+    const pdfImage = singelCourse?.course_photo;
+    const Paragraps = singelCourse?.Paragrap;
+    console.log(pdfImage);
 
+    const pdfGenerate = () => {
+
+        console.log("inside pdf")
+        var doc = new jsPDF('landscape', 'px', 'a4', 'false');
+        doc.addImage(logo, 'JPEG', 0, 20, 80, 80);
+        doc.setFont('Helvertica', 'bold')
+        // doc.addPage()
+        doc.text(20, 20, "Name : " + courseName, )
+        doc.text(20, 30, "Details information : " + Paragraps,)
+        doc.save('file.pdf')
+    }
 
     return (
         <>
@@ -20,8 +39,8 @@ const Course_Details = () => {
                                 <span className="inline-block text-xs leading-none dark:text-gray-400">@web-developer</span>
                             </div>
                         </div>
-                        <button title="Open options" type="button" className='hover:dark:text-violet-400'>
-                            <span className='flex align-middle'><p className='mr-1'>Download </p> <FaDownload className='mt-1 ml-1'></FaDownload></span>
+                        <button onClick={pdfGenerate} title="Open options" type="button" className='hover:dark:text-violet-400'>
+                            <span className='flex align-middle'><p className='mr-1'>Download Pdf</p> <FaDownload className='mt-1 ml-1'></FaDownload></span>
                         </button>
                     </div>
                     {/* -------header end--------- */}
