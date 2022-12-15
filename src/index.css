@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100&family=Anek+Odia:wght@100;600&family=Beau+Rivage&family=Kanit:ital,wght@0,500;0,600;1,500&family=Oswald:wght@400;500;600;700&family=PT+Sans+Narrow:wght@700&family=Poppins&display=swap");
+
+/* font-family: 'Anek Gujarati', sans-serif;
+font-family: 'Anek Odia', sans-serif;
+font-family: 'Beau Rivage', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif; */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,14 +22,62 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+
+}
+
+/*
+source
+http://stackoverflow.com/a/23935891/3853728
+*/
+
+.img-gradient {
+  position: relative;
+  /* display: inline-block; */
+}
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  display: inline-block;
+  background: linear-gradient(to bottom, #18191a79 20%, #182635eb 80%);
+  /* W3C */
+}
+
+.img-gradient img {
+  display: block;
+}
+
+.bgcolor {
+  background-color: rgba(0, 0, 0, 0.938) !important;
+  width: 100% !important;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-#githubsss{
+
+#githubsss {
   width: 100% !important;
   height: 100% !important;
   background-color: aquamarine !important;
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #f59f0bcb 0%, #ff5500d7 100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-1:hover {
+  background-image: linear-gradient(to right, #F59E0B 0%, #FF5600 51%, #F59E0B 100%);
 }

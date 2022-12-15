@@ -62,7 +62,7 @@ const Registrar = () => {
                 updateDetails(userName, profilePhoto)
                     .then(result => {
                         // alert("update Your Details or Information")
-                        toast.success('🦄 You are Successfully Registration !');
+                        toast.success('You are Successfully Registration !');
 
                         emailVerification()
                             .then(result => {
@@ -104,8 +104,8 @@ const Registrar = () => {
 
     return (
         <>
-            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" className='reGistration flex justify-center items-center pt-5 mx-5'>
-                <div className='flex flex-col max-w-md  rounded-md sm:px-10 px-7 sm:py-3 py-1 bg-gray-100 text-gray-900'>
+            <div className='reGistration flex justify-center items-center pt-5 px-5 bg-[#14213D]'>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" className='flex flex-col max-w-md   rounded-md sm:px-10 px-7 sm:py-3 py-1 bg-gray-100 text-gray-900 my-20'>
                     <div className='mb-3 text-center'>
                         <h1 className='mb-1 mt-1 text-4xl font-bold text-gray-900'><span className='text-amber-700'>Re</span>gister</h1>
                         <p className='text-sm text-gray-400'>Create a new account</p>

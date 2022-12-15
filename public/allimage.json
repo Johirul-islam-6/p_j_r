@@ -1,0 +1,66 @@
+[
+    {
+        "id": "1",
+        "link": "https://doctor-portal-b10c4.web.app/",
+        "name": "Dental Service",
+        "features": "Admin route, User add Dental services on-time booking, etc",
+        "technology": "React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
+        "img": "https://i.ibb.co/RbvxNDk/doctor.png"
+    },
+    {
+        "id": "2",
+        "link": "https://resell-cars-shop.web.app/",
+        "name": "Old Car Resell Shop",
+        "features": "He can sell his old car by opening a seller account. Buyers can buy old cars by opening a user.",
+        "technology": "Technology: React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
+        "img": "https://i.ibb.co/jfkZn07/resell-car.png"
+    },
+    {
+        "id": "3",
+        "link": "https://assignmen-10.web.app/",
+        "name": "Widding PhotoShut",
+        "features": "Widding PhotoShut Booking.Services base review add & all user reviews show, etc.",
+        "technology": "React.js, React router, React Query, Jwt, express.js, API integration, firebase, MongoDB,Tailwind CSS( daisy), etc",
+        "img": "https://i.ibb.co/ZS3Q8V2/widding.png"
+    },
+    {
+        "id": "4",
+        "link": "https://johirul574206.github.io/my.site_repo/main-page.html",
+        "name": "Eduford web site",
+        "features": "Simple Design & multiple page links, Map, contact information, etc.",
+        "technology": "Html, Css, Bootstrap, javaScript & all Responsive, etc.",
+        "img": "https://i.ibb.co/D9QgR92/Eduford.png"
+    },
+    {
+        "id": "5",
+        "link": "https://johirul574206.github.io/my-assignment_three-repo/",
+        "name": "Education person",
+        "features": "Simple Home page auto Slider or fontend design & modal open",
+        "technology": "Html, Css, Bootstrap & all Responsive, etc.",
+        "img": "https://i.ibb.co/3vqgk39/e-Ducation.png"
+    },
+    {
+        "id": "6",
+        "link": "https://today-bbc-news-houre-2022.netlify.app/",
+        "name": "BBC News Today",
+        "features": "Cetagory Base News filtering & singel news Base Dynamic Data lode Modal",
+        "technology": "JavaScript, Api, BootStrap, Html5, Css, etc",
+        "img": "https://i.ibb.co/n14qnzD/Bbc-news.png"
+    },
+    {
+        "id": "7",
+        "link": "https://fifa-world-cup-2023.netlify.app/",
+        "name": "FiFa World Cup & Ballon d.Or Winer",
+        "features": "Dynamic Ballon d.Or Winer on Click Change, Quater football Field ground",
+        "technology": "JavaScript, Api, Html, Css, BootStrap, etc.",
+        "img": "https://i.ibb.co/wYR2Xyf/world-bangladeh.png"
+    },
+    {
+        "id": "8",
+        "link": "https://johirul574206.github.io/nike-porject-repo/",
+        "name": "Nike Showes Collection",
+        "features": "Simple Page Design, Nike Showes collection shop",
+        "technology": "Html5, CSS, etc.",
+        "img": "https://i.ibb.co/4szDHSY/niky.png"
+    }
+]

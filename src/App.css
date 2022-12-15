@@ -8,14 +8,25 @@
   /* font-family: 'Barlow Condensed', sans-serif; */
 
 }
-.right-side-textss{
+
+.font_justify {
+  font-style: oblique;
+}
+
+.mx-with {
+  max-width: auto !important;
+  margin: 0 auto !important;
+}
+
+.right-side-textss {
   padding-bottom: 5px;
   transition: all 0.1s ease-in-out;
 }
-.right-side-textss:hover{
+
+.right-side-textss:hover {
   border-bottom: 2px solid rgb(255, 255, 255);
   color: rgb(228, 156, 40);
-  
+
 }
 
 .reGistration {
@@ -23,10 +34,14 @@
 }
 
 
+#myResume:hover {
+  color: rgb(255, 255, 255) !important;
+}
+
 /* ---------------navbar-------------- */
 .lg-header a {
   color: rgb(255, 255, 255);
-  font-size: 15px !important;
+  font-size: 16px !important;
   /* font-weight: 100 !important; */
   cursor: pointer;
   transition: all 0.3s ease-in-out !important;
@@ -63,7 +78,7 @@
 }
 
 /* -------right side nav---------- */
-.right-side-nav{
+.right-side-nav {
   display: block !important;
 }
 
@@ -73,12 +88,12 @@
     color: aqua !important;
   }
 
-    .lg-header .btn {
-      background-color: unset !important;
-      border: none !important;
-      padding: 0 !important;
-      font-size: 10px !important;
-    }
+  .lg-header .btn {
+    background-color: unset !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: 10px !important;
+  }
 
   .imates {
     width: 30px !important;
@@ -88,4 +103,18 @@
     font-size: 18px !important;
     margin: 0 1px !important;
   }
+}
+
+#myResume {
+  color: rgb(227, 152, 2);
+}
+
+/* .Pdf {
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto !important;
+} */
+
+#OutLog {
+  font-size: 22px;
 }

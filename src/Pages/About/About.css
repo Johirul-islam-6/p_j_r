@@ -1,0 +1,32 @@
+.aboutImage {
+    background-attachment: fixed !important;
+    width: 100% !important;
+    height: 80vh !important;
+
+}
+
+.img-gradient {
+    position: relative;
+    /* display: inline-block; */
+}
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65vh;
+    display: inline-block;
+    background: linear-gradient(to bottom, #14213d9a 20%, #14213D 80%);
+    /* W3C */
+}
+
+.img-gradient img {
+    display: block;
+}

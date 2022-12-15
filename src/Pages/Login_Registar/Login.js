@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
-import { ToastContainer, toast } from 'react-toastify'; 
+import { ToastContainer, toast } from 'react-toastify';
 import AOS from 'aos';
 
 const Login = () => {
@@ -28,9 +28,9 @@ const Login = () => {
         // Sing In part
         userSingInWithEmailPassword(email, password)
             .then(result => {
-                toast.success('🦄 You are Successfully Log in !');
+                toast.success(' You are Successfully Log in !');
                 navigat(froms, { replace: true })
-            }).catch(error => toast.error("🦄Did't match you Password!", error))
+            }).catch(error => toast.error("Didn't match you Password!", error))
 
         setTimeout(() => {
             if (!password) {
@@ -46,7 +46,7 @@ const Login = () => {
     const googleBtnAutoLogIn = () => {
         googleAutoLogIn()
             .then(restult => {
-                toast.success('🦄 You are Successfully Log in Google !');
+                toast.success(' You are Successfully Log in Google !');
                 navigat(froms, { replace: true })
             }).catch(error => console.log(error))
     }
@@ -54,7 +54,7 @@ const Login = () => {
     const githubAutoLogIN = () => {
         gitHubAutoLogIn()
             .then(result => {
-                toast.success('🦄 You are Successfully Log in GitHub !');
+                toast.success(' You are Successfully Log in GitHub !');
                 navigat(froms, { replace: true })
             }).catch(error => console.log(error))
     }
@@ -69,13 +69,13 @@ const Login = () => {
     useEffect(() => {
         setTimeout(() => {
             AOS.init();
-        }, );
+        },);
     }, [])
 
 
     return (
-        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200" className='flex justify-center items-center pt-8 mx-5'>
-            <div className='flex flex-col max-w-md px-6 py-2 rounded-md sm:p-10 bg-gray-100 text-gray-900'>
+        <div data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1200" className='flex justify-center items-center pt-8 px-5 bg-[#14213D]'>
+            <div className='flex flex-col max-w-md px-6 py-2 rounded-md sm:p-10 bg-gray-100 text-gray-900 my-20'>
                 <div className='mb-8 text-center'>
                     <h1 className='my-3 text-4xl font-bold'><span className='text-amber-700'>Si</span>ng in</h1>
                     <p className='text-sm text-gray-400'>

@@ -8,8 +8,17 @@ import Registrar from "../Pages/Login_Registar/Registrar";
 import Login from "../Pages/Login_Registar/Login";
 import ErrorPages from "../Pages/ErrorPagess/ErrorPages";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
-import Block from "../Pages/components/Block";
-import Faq from "../Pages/components/Faq";
+import Projects from "../Pages/Project/Projects";
+import Contact from "../Pages/Contact/Contact";
+import Pdf from "../PDF/Pdf";
+import ServiceCetagory from "../Pages/Cetagory/ServiceCetagory";
+import About from "../Pages/About/About";
+import ExtraProjectDetails from "../Pages/components/Home page component/ExtraProjectDetails";
+import Blocks from '../Pages/Block/Blocks'
+import ResumeMain from "../Pages/Resume/ResumeMain";
+import Marn from "../PDF/Marn";
+import Front from "../PDF/Front";
+import Backend from "../PDF/Backend";
 
 
 
@@ -24,26 +33,60 @@ export const router = createBrowserRouter([
                 element: <Home></Home>
             },
             {
-                path: '/courses',
-                element: <AllCourse></AllCourse>
+                path: '/pdf',
+                element: <ResumeMain />
+            },
+            {
+                path: '/pdf/mern',
+                element: <Marn />
+            },
+            {
+                path: '/pdf/front',
+                element: <Front />
+            },
+            {
+                path: '/pdf/backend',
+                element: <Backend />
+            },
+            {
+                path: '/cetagors',
+                element: <ServiceCetagory />
+            },
+            {
+                path: '/development/:id',
+                element: <AllCourse></AllCourse>,
+                loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/development/${params?.id}`)
             },
 
             {
-                path: '/courses/:id',
+                path: '/details/:id',
                 element: <Course_Details></Course_Details>,
-                loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/course/${params.id}`)
+                loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/details/${params.id}`)
 
+            },
+            {
+                path: '/project',
+                element: <Projects></Projects>
+            },
+            {
+                path: '/simple-project/:id',
+                element: <ExtraProjectDetails />,
+                loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/simple-project/${params?.id}`)
+            },
+
+            {
+                path: '/contact',
+                element: <Contact />
+            },
+            {
+                path: '/about',
+                element: <About />
             },
             {
                 path: '/block',
-                element: <Block></Block>
+                element: <Blocks />
             },
-          
-            {
-                path: '/faq',
-                element: <Faq></Faq>
-            },
-          
+
             {
                 path: '/login',
                 element: <Login></Login>
@@ -63,10 +106,12 @@ export const router = createBrowserRouter([
                         <Cheakout></Cheakout>
                     </PrivetRoute>
                 ),
-                 loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/course/${params.id}`)
-               
+                loader: ({ params }) => fetch(`https://web-technology-server-site.vercel.app/course/${params.id}`)
+
             }
+
         ]
     }
+
 ])
 

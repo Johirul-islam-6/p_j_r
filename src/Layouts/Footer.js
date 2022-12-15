@@ -4,16 +4,16 @@ import Logo from '../assent/logo/web.png'
 const Footer = () => {
     return (
         <div>
-            <footer className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100 mt-10">
+            <footer className="px-4 divide-y bg-[#14213D] dark:text-gray-100 ">
                 <div className="py-6 text-sm text-center dark:text-gray-400 "></div>
                 <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                     <div className="lg:w-1/3">
                         <a rel="noopener noreferrer" href="#" className="flex lg:ml-10 justify-center space-x-3 lg:justify-start">
-                            <div className="flex items-center justify-center w-32 h-12 rounded-full ">
+                            <div className="flex items-center justify-center w-28 h-10 rounded-full ">
                                 <img src={Logo} alt="" />
-                                <span className="self-center text-2xl font-semibold">Learning</span>
+                                <span className="self-center text-2xl font-semibold italic">Developer</span>
                             </div>
-                            
+
                         </a>
                     </div>
                     <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
