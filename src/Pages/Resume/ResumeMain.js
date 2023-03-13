@@ -8,14 +8,14 @@ import BackEnd from '../../assent/Resume/junior.png'
 const ResumeMain = () => {
     return (
         <>
-            <div className="w-[100%] md:h-[130vh] bg-[#14213D] pt-24 px-10">
-                {/* <div className="flex justify-evenly">
-                    <button className="btn btn-primary">MERN STACK DEVELOPMENT</button>
-                    <button className="btn btn-primary">FRONTEND DEVELOPMENT</button>
-                    <button className="btn btn-primary">JUNIOR WEB DEVELOPMENT</button>
-                </div> */}
+            <div className="w-[100%] md:h-[130vh] bg-[#14213D] pt-24 px-10 flex justify-center items-center">
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-2 md:px-20">
+
+
+
+                <a href='https://drive.google.com/file/d/1ssRKdmJdYiqbE47VWROpOlPCPpX5WYgX/view?usp=share_link' className='btn btn-primary '>Downlode Resume</a>
+
+                {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-2 md:px-20">
                     <div className="block">
                         <Link to={`/pdf/mern`} > <button className="btn btn-primary mx-auto block ">MERN STACK DEVELOPMENT LINK</button> </Link>
                         <h1 className='text-[20px] font-bold py-5 text-center uppercase'>Mern Stack Developer Resume</h1>
@@ -37,7 +37,7 @@ const ResumeMain = () => {
                             <img src={BackEnd} alt="" />
                         </div>
                     </div>
-                </div>
+                </div> */}
 
 
             </div>

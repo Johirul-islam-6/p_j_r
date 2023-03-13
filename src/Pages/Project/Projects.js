@@ -57,6 +57,7 @@ const Projects = () => {
                                             <Link className=' mt-3 md:ml-16 ml-2 block md:hidden'><span className='text-blue-500 underline cursor-pointer text-sm'>live site.com</span></Link>
                                         </div>
                                     </div>
+
                                 </div>
                             </PhotoProvider>
                         </>

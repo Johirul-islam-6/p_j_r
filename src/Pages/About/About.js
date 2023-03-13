@@ -32,7 +32,9 @@ const About = () => {
                 </video>
                 <div className="about_text absolute top-10 justify-center flex z-50">
                     <div className="grid grid-cols-1 md:grid-cols-2 md:px-20">
-                        <div className="div"></div>
+                        <div className="div">
+                            <img src="https://i.ibb.co/jk8Q92Q/chaare.png" alt="" />
+                        </div>
                         <div data-aos="fade-right"
                             data-aos-offset="300"
                             data-aos-easing="ease-in-sine"

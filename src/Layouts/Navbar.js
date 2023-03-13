@@ -25,16 +25,14 @@ const Navbar = () => {
 
     return (
         <>
-            <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="navbar bg-[#14213D] px-4 mx-auto fixed top-0">
+            <div data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000" className="navbar bg-[#14213D] px-4 mx-auto fixed top-0 py-2">
                 {/* -------------navbar start------------ */}
                 <div className="navbar-start ">
                     {/* ---------logo show lg:--------- */}
                     <div className='hidden lg:block'>
                         <div className='flex'>
-                            <Link to='/' className=" normal-case text-xl lg:w-20">
-                                <img className='w-full' src={Logo} alt="" />
-                            </Link>
-                            <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>Developer<span className='text-gray-300 sing '>.rasel</span></Link>
+
+                            <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>Johirul <span className='px-1 text-white'> Islam</span> <span className='text-gray-300 sing '>.rasel</span></Link>
                         </div>
                     </div>
                     {/* ------ toggle droup down -------------- */}
@@ -44,8 +42,7 @@ const Navbar = () => {
                         </label>
                         <ul data-aos="fade-right" tabIndex={0} className="lg-header hiside menu menu-compact dropdown-content  p-2  shadow bg-slate-700  rounded-box w-60  lg:hidden z-40">
                             <Link to='/' className='btn mx-6'>Home</Link>
-                            <Link to='/cetagors' className='btn'>Development</Link>
-                            <Link to='/project' className='btn mx-6'>project</Link>
+                            <Link to='/cetagors' className='btn'>development</Link>
                             <Link to='/about' className='btn'>about</Link>
                             <Link to='/contact' className='btn mx-6'>Contact</Link>
                             <Link to='/block' className='btn'>block</Link>
@@ -59,7 +56,7 @@ const Navbar = () => {
                     <div className='flex justify-start  lg:hidden'>
                         <Link to='/' className=" normal-case text-xl w-8 sm:w-6">
                             <img className=' w-10 imates' src='' alt="" />
-                        </Link><Link to='/' className='logo-text lg:mx-1 flex items-center font-bold text-2xl text-amber-500'>WE<span className='text-white'>B</span></Link>
+                        </Link><Link to='/' className='logo-text lg:mx-1 flex items-center font-bold text-1xl text-amber-500'>Johirul<span className='text-white'>Islam</span></Link>
                     </div>
                 </div>
                 {/* -----------navbar-end text btn section--------- */}
@@ -69,48 +66,29 @@ const Navbar = () => {
 
                         <ul className="lg-header menu menu-horizontal p-0">
                             <Link to='/' className='btn mr-4'>Home</Link>
-                            <Link to='/cetagors' className='btn mr-4'>Development</Link>
-                            <Link to='/project' className='btn mr-4'>Project</Link>
+                            <Link to='/cetagors' className='btn mr-4'>development</Link>
+                            {/* <Link to='/project' className='btn mr-4'>Project</Link> */}
                             <Link to='/about' className='btn mr-4'>About</Link>
                             <Link to='/contact' className='btn mr-4'>Contact</Link>
                             <Link to='/block' className='btn mr-4'>Block</Link>
                             <Link to='/pdf' id='myResume' className='btn mr-0'> My resumes</Link>
 
-                            {/* <label htmlFor="Toggle1" className="ml-4 items-center space-x-4 cursor-pointer dark:text-gray-100 hidden lg:inline-flex">
-                                <span className='text-1xl text-white text-bold'>Light</span>
-                                <span className="relative">
-                                    <input id="Toggle1" type="checkbox" className="hidden peer" />
-                                    <div className="w-10 h-6 rounded-full shadow-inner dark:bg-gray-400 peer-checked:dark:bg-violet-400"></div>
-                                    <div className="absolute inset-y-0 left-0 w-4 h-4 m-1 rounded-full shadow peer-checked:right-0 peer-checked:left-auto dark:bg-gray-800"></div>
-                                </span>
-                                <span className='text-white'>Dark</span>
-                            </label> */}
 
-                            <ul className="lg-header menu menu-horizontal p-0 hidden lg:flex">
+                            {/* <ul className="lg-header menu menu-horizontal p-0 hidden lg:flex">
                                 {
                                     user?.uid ?
-                                        <Link id='myResume' to='/' onClick={LogoutBtn} className='btn mx-2 ml-4'>Log out</Link>
+                                        <Link to='/' onClick={LogoutBtn} className='btn mx-2 ml-4'>Log out</Link>
                                         :
                                         <>
-                                            <Link id='myResume' to='/registration' className='btn mx-3'>Registrar</Link>
-                                            <Link id='myResume' to='/login' className='btn mr-3'>Login</Link>
+                                            <Link to='/registration' className='btn mx-3'>Registrar</Link>
+                                            <Link to='/login' className='btn mr-3'>Login</Link>
                                         </>
                                 }
-                            </ul>
+                            </ul> */}
 
                         </ul>
                     </div>
-                    <ul className="lg-header menu menu-horizontal p-0 lg:hidden flex ">
-                        {
-                            user?.uid ?
-                                <Link to='/' onClick={LogoutBtn} id='OutLog' className='btn mx-4'>Log out</Link>
-                                :
-                                <>
-                                    <Link to='/registration' className='btn ml-3 mr-2 lg:mx-1'>Registrar</Link>
-                                    <Link to='/login' className='btn mr-3'>Login</Link>
-                                </>
-                        }
-                    </ul>
+
 
                     {/* ----------you profile start----------- */}
 
@@ -120,9 +98,9 @@ const Navbar = () => {
 
                             {
                                 user?.uid ?
-                                    <img className='w-6 bg-slate-300' src={user?.photoURL} />
+                                    <img className='w-6 bg-slate-300' src='https://i.ibb.co/74dCMRZ/profile-baground22.png' />
                                     :
-                                    <img className='w-6 bg-slate-300' src="https://placeimg.com/192/192/people" />
+                                    <img className='w-6 bg-slate-300' src="https://i.ibb.co/74dCMRZ/profile-baground22.png" />
                             }
                         </div>
 

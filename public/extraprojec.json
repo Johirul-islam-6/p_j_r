@@ -1,47 +1,57 @@
 [
     {
         "id": "1",
+        "link": "https://furniture-zoon.web.app/",
+        "git": "https://github.com/Johirul-islam-6/Furniture_Zoon.Com.git",
+        "name": "Furniture Zoon.com",
+        "features": " This website like makes furniture shops. visite this site If you can become a user then you get buy pement method a furniture. & if you can become a admin then you can access admin route. This admin route inside new furniture, Discount furniture add your website furniture collections. ( Admin email : ras@gmail.com pass: 123456 )",
+        "technology": "React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
+        "img": "https://i.ibb.co/mTHFNdz/furniture-zoon.png",
+        "img2": "https://i.ibb.co/w7znN03/laset.png",
+        "img3": "https://i.ibb.co/YhzCKB6/card.png"
+    },
+    {
+        "id": "2",
         "link": "https://doctor-portal-b10c4.web.app/",
         "git": "https://github.com/Johirul-islam-6/Dental-Service_Booking.git",
         "name": "Dental Service",
-        "features": "=> Admin route, User add Dental services on-time booking, etc",
-        "features2": "=> If can be User delete Dental services booking, etc",
-        "features3": "=> Admin route,if you can be Admin add New Doctor",
-        "features4": "=> Admin route, User Booking delete",
-        "features5": "=> Admin route, user kick this services",
+        "features": ": If you can become a user. You can add on-time dental services to timely bookings.To view the all dental booking services you have booked, go to User Route.If you can be an admin, then you have access to all users' booking accept, admin, add, new doctor, add, delete, etc. ( Admin email : raselkhandhaka2@gmail.com pass: 123456 )",
         "technology": "React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
         "img": "https://i.ibb.co/RbvxNDk/doctor.png",
         "img2": "https://i.ibb.co/Y3LZbvr/doctor02.png",
         "img3": "https://i.ibb.co/KXJ2v67/doctor03.png"
     },
     {
-        "id": "2",
-        "link": "https://resell-cars-shop.web.app/",
-        "git": "https://github.com/Johirul-islam-6/Resell-Car_Collection.git",
-        "name": "Old Car Resell Shop",
-        "features": "=> He can sell his old car by opening a seller account.",
-        "features2": "=> Buyers can buy old cars by opening a user.",
-        "features3": "=> Only Seller account add New product.",
-        "features4": "=> Seller account her product delete eidite",
-        "features5": "=> if admin  then you All controling admin panel",
-        "technology": "Technology: React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
-        "img": "https://i.ibb.co/jfkZn07/resell-car.png",
-        "img2": "https://i.ibb.co/v1TcMqq/addproduct.png",
-        "img3": "https://i.ibb.co/m9MWS7H/admin-3.png"
-    },
-    {
         "id": "3",
         "link": "https://assignmen-10.web.app/",
         "git": "https://github.com/Johirul-islam-6/Widding-photShut_client-site.git",
         "name": "Widding PhotoShut",
-        "features": "=> Widding PhotoShut Booking.Services base review add .",
-        "features2": "=> & all user reviews show, etc.",
-        "features3": "=> My Client Services base Review Add .",
-        "features4": "=> Log in LogOut Section optional Chaning",
-        "features5": "=> Over all this site widding photoShut.",
+        "features": ":For each service, a review of that service will be provided on the service details page. Again, if you are logged in, you can give service reviews. And if you don't log in then you can't add a review.And if you go to the My Review route, you can see the reviews given by Anna. Conditional rendering .",
         "technology": "React.js, React router, React Query, Jwt, express.js, API integration, firebase, MongoDB,Tailwind CSS( daisy), etc",
         "img": "https://i.ibb.co/ZS3Q8V2/widding.png",
         "img2": "https://i.ibb.co/RhkT1bb/input.png",
         "img3": "https://i.ibb.co/NySQ64M/Review.png"
+    },
+    {
+        "id": "4",
+        "link": "https://today-bbc-news-houre-2022.netlify.app/",
+        "git": "https://github.com/Johirul-islam-6/BBC-News.git",
+        "name": "BBC News today",
+        "features": "This site news related. you can see this site upcomming news, today news, intertantment, sports etc.",
+        "technology": "Technology: JavaScript, BootStrap, Html, Css Other React Liberty, etc.",
+        "img": "https://i.ibb.co/vcfczrx/BBc.png",
+        "img2": "https://i.ibb.co/tYq4rm3/BBcModal.png",
+        "img3": "https://i.ibb.co/4ZDBY5q/Bbc-2.png"
+    },
+    {
+        "id": "5",
+        "link": "https://resell-cars-shop.web.app/",
+        "git": "https://github.com/Johirul-islam-6/Resell-Car_Collection.git",
+        "name": "Old Car Resell Shop",
+        "features": "As a seller Account type login my web site then He will be add new resell car, or as a user account type user on time booking car, etc.",
+        "technology": "Technology: React.js, express.js, MongoDB, API integration, firebase, Jwt, MongoDB, tailwind Css( daisy),Other React Liberty, etc.",
+        "img": "https://i.ibb.co/jfkZn07/resell-car.png",
+        "img2": "https://i.ibb.co/v1TcMqq/addproduct.png",
+        "img3": "https://i.ibb.co/m9MWS7H/admin-3.png"
     }
 ]
