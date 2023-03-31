@@ -26,13 +26,13 @@ const SkillsCard = () => {
                 <div className=" grid grid-cols-1 md:flex justify-between ">
                     <div className="hidden md:block droupdown mr-5">
                         <Link to={``} className='w-[120px] py-3 rounded-lg font-bold btn-primary text-center px-5 my-2 mx-auto block' >All</Link>
-                        <Link to={`/development/mern`} className='w-[120px] py-3 rounded-lg font-bold btn-primary text-center px-5 my-2 mx-auto block'>MARN</Link>
+                        <Link to={`/development/mern`} className='w-[120px] py-3 rounded-lg font-bold btn-primary text-center px-5 my-2 mx-auto block'>MERN</Link>
                         <Link to={`development/fontend`} className='w-[120px] py-3 rounded-lg font-bold btn-primary text-center px-5 my-2 mx-auto block'>FrontEnd</Link>
                         <Link to={`/development/backend`} className='w-[120px] py-3 rounded-lg font-bold btn-primary text-center px-5 my-2 mx-auto block'>BackEnd</Link>
                     </div>
                     <div className="flex md:hidden droupdown justify-center my-10">
                         <Link to={``} className='btn btn-outline hidden md:block' >All</Link>
-                        <Link to={`/development/mern`} className='btn btn-outline mx-2'>MARN</Link>
+                        <Link to={`/development/mern`} className='btn btn-outline mx-2'>MERN</Link>
                         <Link to={`development/fontend`} className='btn btn-outline'>FrontEnd</Link>
                         <Link to={`/development/backend`} className='btn btn-outline mx-2'>BackEnd</Link>
                     </div>

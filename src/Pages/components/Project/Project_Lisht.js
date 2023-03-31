@@ -28,8 +28,8 @@ const Project_Lisht = () => {
         <>
             <>
 
-                <h1 className='text-white text-4xl text-center font pt-10 animation_p uppercase'>My latest work</h1>
-                <p className='text-center pt-3 text-[18px]'>I have been complete 10+ project last 6 month . Here i'm showing <br /> some best project . If you want to see others project just go to <br /> my Github repository .</p>
+                <h1 className='text-white text-4xl text-center font pt-10 animation_p uppercase'>My latest Projects</h1>
+                <p className='text-center pt-3 text-[18px]'>I have been complete 10+ projects last 1 month . Here I'm showing <br /> some best project . If you want to see others project just go to <br /> my Github repository .</p>
 
                 <Swiper
                     effect={"coverflow"}
@@ -86,7 +86,7 @@ const Project_Lisht = () => {
                             <div class="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-2 text-[28px]">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg></div>
                             <h4 class="text-xl font-medium mb-2">Figma To React</h4>
-                            <p>I can do any figma file to convert it into  a responsive, professional, and pixel-perfect React.js website.  I am ready to use any npm packages or other CSS/UI frameworks by the project requirements.</p>
+                            <p>I can do any figma file to convert it into  a responsive, professional, and pixel-perfect React.js website.  I am ready to use any npm packages or other CSS/UI frameworks by the project requirements...</p>
                         </div>
                         <div class="bg-[#5014B8] p-6 rounded-2xl">
                             <div class="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-2 text-[28px]">
@@ -94,13 +94,13 @@ const Project_Lisht = () => {
                                     <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
                                     <line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg></div>
                             <h4 class="text-xl font-medium mb-2 text-white">Frontend Development</h4>
-                            <p className='text-white'>I am able to build a responsive website so that your website will look perfect on all the small and wide screens.I have almost 6 month of experience and complete almost 20+ projects.. I have good skills on HTML5, CSS3, BOOTSTRAP, Tailwind CSS, JAVASCRIPT, REACT JS .</p>
+                            <p className='text-white'>I am able to build a responsive website. I have almost 2 years of experience and complete almost 20+ projects.. I have good skills on <span className='text-amber-600 '> HTML5, CSS3, SASS, BootStrap, Tailwind CSS, JavaScript, ES6, React.Js, Nent.JS, Redux, SwiperJS,</span> Or some more Technology...</p>
                         </div>
                         <div class="bg-[#111b30] p-6 rounded-2xl">
                             <div class="text-accent rounded-sm w-12 h-12 flex justify-center items-center mb-2 text-[28px]">
                                 <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
                             <h4 class="text-xl font-medium mb-2">Backend Development</h4>
-                            <p>I can do any figma file to convert it into  a responsive, professional, and pixel-perfect React.js website.  I am ready to use any npm packages or other CSS/UI frameworks by the project requirements.</p>
+                            <p>My experience is 1 year in server Site. I am able to create Server site <span className='text-amber-400 '>MVC structure  with Node.Js, Express, Middleware, Mongoss, REST API, Firebase, dotEnv, JWT token  in Local Store, Global Error Handler,</span> Or Some more technology...</p>
                         </div>
                     </div>
                 </div>
