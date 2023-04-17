@@ -7,6 +7,8 @@ import SkillsCard from './Home page component/Skills Card/SkillsCard';
 import Project_Lisht from './Project/Project_Lisht';
 import "./Home.css";
 import Testimoniya from './Home page component/Testimonia/Testimoniya';
+import Design from './Design/Design';
+
 
 const Home = () => {
     //animation 
@@ -204,8 +206,9 @@ const Home = () => {
             </section>
             <Count />
             <SkillsCard />
+            <Design />
             <Project_Lisht />
-            {/* <Testimoniya /> */}
+            <Testimoniya />
         </div>
     );
 };
