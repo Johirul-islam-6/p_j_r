@@ -50,7 +50,7 @@ const Home = () => {
                             <p className="mt-6 mb-8 text-lg lg:text-3xl sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                                 <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">MY Services</Link>
-                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">About CEO</a>
+                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                             </div>
                         </main>
 
@@ -96,7 +96,7 @@ const Home = () => {
 
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                             <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">Our Courses</Link>
-                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">About CEO</a>
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                         </div>
                     </motion.div>
                     {/* ----text lg size + start -------- */}
@@ -130,7 +130,7 @@ const Home = () => {
                             <p className="mt-6 mb-8 text-lg lg:text-1xl sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                                 <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">My Services</Link>
-                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">About CEO</a>
+                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                             </div>
                         </main>
 
@@ -197,7 +197,7 @@ const Home = () => {
                             </section>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                                 <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">Our Services</Link>
-                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">About CEO</a>
+                                <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                             </div>
                         </main>
                     </motion.div>

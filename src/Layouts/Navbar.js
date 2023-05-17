@@ -45,7 +45,7 @@ const Navbar = () => {
                             <Link to='/cetagors' className='btn'>development</Link>
                             <Link to='/about' className='btn'>about</Link>
                             <Link to='/contact' className='btn mx-6'>Contact</Link>
-                            <Link to='/block' className='btn'>block</Link>
+                            <Link to='/block' className='btn'>Blog</Link>
                             <Link to='/pdf' id='myResume' className='btn mr-4 bgbtn '> My resume</Link>
                         </ul>
                     </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
                             {/* <Link to='/project' className='btn mr-4'>Project</Link> */}
                             <Link to='/about' className='btn mr-4'>About</Link>
                             <Link to='/contact' className='btn mr-4'>Contact</Link>
-                            <Link to='/block' className='btn mr-4'>Block</Link>
+                            <Link to='/block' className='btn mr-4'>Blog</Link>
                             <Link to='/pdf' id='myResume' className='btn mr-0'> My resumes</Link>
 
 

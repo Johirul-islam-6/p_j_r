@@ -76,7 +76,7 @@ export default function App() {
                                                 </div>
                                             </div>
 
-                                            <h5 className="text-justify text-slate-600 font-normal text-md  mt-3 divide-y mb-4 font-serif">
+                                            <h5 className="text-justify text-slate-600 font-normal text-md  mt-3 divide-y mb-4 ">
                                                 He is such a hard working man who does not know how to give up. I know he will shine in programming field by any means. Best of luck boy.
                                             </h5>
                                             <span className="text-black">
