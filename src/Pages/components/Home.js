@@ -85,14 +85,14 @@ const Home = () => {
                                     <div>I'm Working in</div>
                                 </div>
                                 <div class="second">
-                                    <div>Web Developer</div>
+                                    <div>Web Development</div>
                                 </div>
                                 <div class="third">
-                                    <div>Systems Engineer</div>
+                                    <div>in Front-End</div>
                                 </div>
                             </section>
                         </main>
-                        <p className="mt-6 mb-8 text-lg lg:text-1xl lowercase sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
+                        <p className="mt-6 mb-8 text-lg lg:text-1xl lowercase sm:mb-12">Always love to learn something new. Love to get error and handle error. If I learn something special I share this with my friends. One secret about me I'm very fast learner.</p>
 
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                             <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">Our Courses</Link>
