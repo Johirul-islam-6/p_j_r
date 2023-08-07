@@ -13,8 +13,8 @@ const Count = () => {
 
                             className='block text-[17px] text-[#e1e0e0] text-center pt-2 z-50 relative left-[0px] md:left-[0px]'>
                             <div className="block pt-12 md:pt-0">
-                                <span className='md:block H1 text-[70px] md:text-[90px] text-[#FCA311] ' >60%</span>
-                                <span className='pt-5 block smallH1'> Finishing web Development<br /> Skill</span>
+                                <span className='md:block H1 text-[70px] md:text-[90px] text-[#FCA311] ' >56%</span>
+                                <span className='pt-5 block smallH1'> Finishing web service<br /> Skills</span>
                             </div>
                         </div>
 

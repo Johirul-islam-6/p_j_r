@@ -15,21 +15,42 @@ import { Link } from 'react-router-dom';
 const Project_Lisht = () => {
 
     const [imgss, setImg] = useState()
+    const [loding, setLoding] = useState(true)
+
+
     useEffect(() => {
         fetch('https://web-technology-server-site.vercel.app/simple')
             .then(res => res.json())
             .then(data => {
                 setImg(data)
+                setLoding(false)
             })
 
     }, [])
+
+    if(loding){
+      return <>
+  <div class="center">
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+      </>
+    }
 
     return (
         <>
             <>
 
-                <h1 className='text-white text-4xl text-center font pt-10 animation_p uppercase'>My latest Projects</h1>
-                <p className='text-center pt-3 text-[18px]'>I have been complete 10+ projects last 1 month . Here I'm showing <br /> some best project . If you want to see others project just go to <br /> my Github repository .</p>
+                {/* <h1 className='text-white text-4xl text-center font pt-10 animation_p uppercase'>My latest Projects</h1>
+                <p className='text-center pt-3 text-[18px]'>I have been complete 10+ projects last 1 month . Here I'm showing <br /> some best project . If you want to see others project just go to <br /> my Github repository .</p> */}
 
                 <Swiper
                     effect={"coverflow"}

@@ -29,10 +29,15 @@ const Navbar = () => {
                 {/* -------------navbar start------------ */}
                 <div className="navbar-start ">
                     {/* ---------logo show lg:--------- */}
-                    <div className='hidden lg:block'>
+                    <div className='hidden lg:block pl-4'>
                         <div className='flex'>
 
-                            <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>Johirul <span className='px-1 text-white'> Islam</span> <span className='text-gray-300 sing '>.rasel</span></Link>
+                            {/* <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>Johirul <span className='px-1 text-white'> Islam</span> <span className='text-gray-300 sing '>.rasel</span></Link> */}
+                            <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>
+                                
+                                <img className='w-[70px] p-2' src="https://i.ibb.co/CtBNX5V/Untitled-1.png" alt="" />
+                               <span className='text-amber-700 sing mt-5 absolute ml-[63px]'>web services</span>
+                                </Link>
                         </div>
                     </div>
                     {/* ------ toggle droup down -------------- */}
@@ -54,18 +59,19 @@ const Navbar = () => {
                 <div className="navbar-center">
                     {/* ---------logo show md or small--------- */}
                     <div className='flex justify-start  lg:hidden'>
-                        <Link to='/' className=" normal-case text-xl w-8 sm:w-6">
-                            <img className=' w-10 imates' src='' alt="" />
-                        </Link><Link to='/' className='logo-text lg:mx-1 flex items-center font-bold text-1xl text-amber-500'>Johirul<span className='text-white'>Islam</span></Link>
+                        <Link to='/' className='logo-text lg:mx-1 flex items-center font-bold text-1xl text-amber-500'>
+                            <img className='w-[70px] p-2' src="https://i.ibb.co/CtBNX5V/Untitled-1.png" alt="" />
+                               <span className='text-amber-700 sing mt-5 absolute ml-[63px]'>web services</span>
+                        </Link>
                     </div>
                 </div>
                 {/* -----------navbar-end text btn section--------- */}
-                <div className="navbar-end ">
+                <div className="navbar-end pr-8">
 
                     <div className="hidden lg:block mr-5">
 
-                        <ul className="lg-header menu menu-horizontal p-0">
-                            <Link to='/' className='btn mr-4'>Home</Link>
+                        <ul className="lg-header menu menu-horizontal p-0 ">
+                            <Link to='/' className='btn mr-4 h-[50px]'>Homes</Link>
                             <Link to='/cetagors' className='btn mr-4'>development</Link>
                             {/* <Link to='/project' className='btn mr-4'>Project</Link> */}
                             <Link to='/about' className='btn mr-4'>About</Link>
