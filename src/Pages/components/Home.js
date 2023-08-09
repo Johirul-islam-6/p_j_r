@@ -7,6 +7,7 @@ import SkillsCard from './Home page component/Skills Card/SkillsCard';
 import "./Home.css";
 import Testimoniya from './Home page component/Testimonia/Testimoniya';
 import Design from './Design/Design';
+import { ContactFrom } from './ContactFrom';
 
 
 const Home = () => {
@@ -46,7 +47,7 @@ const Home = () => {
                                 </div>
 
                             </section>
-                            <p className="mt-6 mb-8 text-lg lg:text-3xl sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
+                            <p className=" work-sans mt-6 mb-8 text-lg lg:text-[18px] sm:mb-12 work-sans">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                                 <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">MY Services are</Link>
                                 <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
@@ -86,7 +87,7 @@ const Home = () => {
                                 </div>
                             </section>
                         </main>
-                        <p className="mt-6 mb-8 text-lg lg:text-1xl lowercase sm:mb-12">Always love to learn something new. Love to get error and handle error. If I learn something special I share this with my friends. One secret about me I'm very fast learner.</p>
+                        <p className=" work-sans mt-6 mb-8 text-lg lg:text-[18px] work-sans sm:mb-12">Always love to learn something new. Love to get error and handle error. If I learn something special I share this with my friends. One secret about me I'm very fast learner.</p>
 
                         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                             <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">Our Courses</Link>
@@ -108,20 +109,20 @@ const Home = () => {
 
                         className="hidden xl:flex flex-col justify-center p-6 text-center absolute top-[25%] left-[-250px] rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                         <main class="Text_container mb-6">
-                            <p className='animation_p'>Hello 👋 I'm Johir <br />My Services are</p>
+                            <p className='animation_p '>Hello 👋 I'm Johir <br />My Services are</p>
                             <section class="animation ">
                                 <div class="first">
-                                    <div className='text-[29px]'>Front-End development</div>
+                                    <div className='text-[29px] playfair'>Front-End development</div>
                                 </div>
                                 <div class="second">
-                                    <div className='text-[29px]'>Mid Back-End development</div>
+                                    <div className='text-[29px] playfair'>Mid Back-End development</div>
                                 </div>
                                 <div class="third">
-                                    <div className='text-[29px]'>Project Analyst</div>
+                                    <div className='text-[29px] playfair'>Project Analyst</div>
                                 </div>
 
                             </section>
-                            <p className="mt-6 mb-8 text-lg lg:text-1xl sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
+                            <p className=" work-sans mt-6 mb-8 text-lg lg:text-[18px] sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
                                 <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">My Services are</Link>
                                 <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
@@ -203,6 +204,7 @@ const Home = () => {
             <Design />
            
             <Testimoniya />
+            <ContactFrom/>
         </div>
     );
 };

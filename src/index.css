@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=REM:wght@100;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=Hind+Madurai:wght@300;400&family=REM:wght@100;600&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=Hind+Madurai:wght@300;400&family=Playfair+Display&family=REM:wght@100;600&family=Work+Sans:ital@1&display=swap');
+
+.firaCode {
+  font-family: 'Fira Code', monospace;
+}
+.work-sans{
+  font-family: 'Work Sans', sans-serif;
+}
+
+.playfair{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  /* text-transform: uppercase; */
+}
+
+.rem {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
 @import url('https://fonts.cdnfonts.com/css/avenir');
 
 @import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100&family=Anek+Odia:wght@100;600&family=Beau+Rivage&family=Kanit:ital,wght@0,500;0,600;1,500&family=Oswald:wght@400;500;600;700&family=PT+Sans+Narrow:wght@700&family=Poppins&display=swap");
@@ -35,7 +62,9 @@ http://stackoverflow.com/a/23935891/3853728
   /* display: inline-block; */
 }
 
-
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
 /* 
 #002f4b,#dc4225 
 Convert HEX to RGBA - http://hex2rgba.devoth.com/

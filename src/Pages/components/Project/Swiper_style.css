@@ -105,3 +105,29 @@
 
     }
 }
+
+@media screen and (min-width: 200px) and (max-width: 680px){
+    .center {
+            height: 100vh;
+            
+        }
+    
+        .wave {
+            width: 5px;
+            height: 100px;
+           
+        }
+                .swiper-slide {
+                   
+                    max-width: 60vw;
+                    max-height: 90vw;
+                    
+                }
+        
+                .swiper-slide img {
+                    
+                    width: 100vw;
+                    height: 30vh;
+        
+                }
+}

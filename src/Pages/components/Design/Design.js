@@ -8,8 +8,8 @@ const Design = () => {
 
     return (
         <div>
-            <section className="bg-[#14213D] py-20 md:mx-3">
-                <div className="container mx-auto">
+            <section className="bg-[#14213D] pt-20 md:mx-3 ">
+                <div className="container mx-auto ">
                     {/*----- section header -----*/}
                     <div className="text-center pb-6 md:pb-10 lg:pb-10">
                         <h5 className="font-bold text-2xl md:text-4xl lg:text-4xl uppercase">MY Web Services are</h5>
@@ -195,7 +195,7 @@ const Design = () => {
   {
     stateList === 'full-stack' && <>
     
-     <Project_Lisht />
+     <Project_Lisht/>
     
     </>
   }
