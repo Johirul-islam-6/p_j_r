@@ -13,7 +13,7 @@ const ResumeMain = () => {
 
 
 
-                <a href='https://drive.google.com/file/d/1ssRKdmJdYiqbE47VWROpOlPCPpX5WYgX/view?usp=share_link' className='btn btn-primary '>Downlode Resume</a>
+                <a href='https://drive.google.com/file/d/1QULluTiLuFzAypl5xBy4VnORvTNkunrp/view?pli=1' className='btn btn-primary '>Downlode Resume</a>
 
                 {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-2 md:px-20">
                     <div className="block">

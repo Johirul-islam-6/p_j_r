@@ -36,7 +36,7 @@ const Navbar = () => {
                             <Link to='/' className='flex items-center font-bold text-2xl text-amber-500'>
                                 
                                 <img className='w-[70px] p-2' src="https://i.ibb.co/CtBNX5V/Untitled-1.png" alt="" />
-                               <span className='text-amber-700 sing mt-5 absolute ml-[63px]'>web services</span>
+                               <span className='text-amber-700 mt-5 absolute ml-[63px] rem'>Protfolio</span>
                                 </Link>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     <div className='flex justify-start  lg:hidden'>
                         <Link to='/' className='logo-text lg:mx-1 flex items-center font-bold text-1xl text-amber-500'>
                             <img className='w-[70px] p-2' src="https://i.ibb.co/CtBNX5V/Untitled-1.png" alt="" />
-                               <span className='text-amber-700 sing mt-5 absolute ml-[63px]'>web services</span>
+                               <span className='text-amber-700 mt-5 absolute ml-[63px] rem'>Protfolio</span>
                         </Link>
                     </div>
                 </div>
