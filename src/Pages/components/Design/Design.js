@@ -12,7 +12,8 @@ const Design = () => {
                 <div className="container mx-auto ">
                     {/*----- section header -----*/}
                     <div className="text-center pb-6 md:pb-10 lg:pb-10">
-                        <h5 className="font-bold text-2xl md:text-4xl lg:text-4xl uppercase">MY Web Services are</h5>
+                         <h1 className='text-[#f0f0f0] font-bold py-1 text-2xl md:text-4xl lg:text-4xl text-center font uppercase animation_p'>My Web Projects</h1>
+
                         <div className="divider w-[120px] mx-auto my-1 mt-4 bg-[#bb7103] h-1"></div>
                     
                     </div>
@@ -66,24 +67,24 @@ const Design = () => {
 
                                 </Link>
                                 <a className='pt-3 underline text-white font-bold hover:text-[#1751E4]' href="https://wonderful-wisp-2f81f4.netlify.app/">--live site link--</a>
-                                
+                                 <p className='text-white'>React, Tailwindcss, etc.</p>
                             </div>
                         </div>
-
+ 
                         <div>
                             <div className="flex gap-x-2">
                                 <div className="group relative w-[200%] md:w-[100%]  border-4 border-sky-600">
-                                    <img className='w-full h-full justify-center' src="https://i.ibb.co/RD7Wcv9/travilgin.png" />
+                                    <img className='w-full h-full justify-center' src="https://i.ibb.co/VMxSrN2/Screenshot-2023-08-10-192233.png" />
                                     <dev
 
                                         className="cursor-pointer"
                                     >
                                         <div className='absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#00000083] opacity-0 group-hover:h-full group-hover:opacity-100 duration-500'>
                                             <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
-                                                Traveling World
+                                                R.Services
                                             </h1>
-                                            <a className='my-1 underline text-white font-bold hover:text-[#1751E4]' href="https://profound-cuchufli-b18a10.netlify.app/">--live site link--</a>
-                                            
+                                            <a className='my-1 underline text-white font-bold hover:text-[#1751E4]' href="https://johir99.netlify.app/">--live site link--</a>
+                                            <p className='text-white'>Html, Bootstrap, javaScript</p>
                                         </div>
                                     </dev>
 
@@ -100,7 +101,7 @@ const Design = () => {
                                                 MocDit Dahsbord
                                             </h1>
                                             <a className='my-1 underline text-white font-bold hover:text-[#1751E4]' href="https://taupe-cranachan-145c6f.netlify.app/">--live site link--</a>
-                                            
+                                              <p className='text-white'>React, Tailwindcss, etc.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -108,17 +109,17 @@ const Design = () => {
                             </div>
                             <div className="flex  mt-2 gap-x-2">
                                 <div className="group relative w-[200%] md:w-[100%]  border-4 border-sky-600">
-                                    <img className='w-full h-full justify-center md:h-[40vh]' src="https://i.ibb.co/1XK2ckG/yellow.png" />
+                                    <img className='w-full h-full justify-center md:h-[40vh]' src="https://i.ibb.co/P9Rq5Z8/Rp.png" />
                                     <div
 
                                         className="cursor-pointer"
                                     >
                                         <div className='absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#00000083] opacity-0 group-hover:h-full group-hover:opacity-100 duration-500'>
                                             <h1 className="text-sm md:text-xl lg:text-2xl text-white bg-[#1751E4] p-2 rounded">
-                                                Yellow Therapist
+                                                Digital Solutions Rp
                                             </h1>
-                                            <a className='my-1 underline text-white font-bold hover:text-[#1751E4]' href="https://symphonious-crisp-e5f04f.netlify.app/">--live site link--</a>
-                                            
+                                            <a className='my-1 underline text-white font-bold hover:text-[#1751E4]' href="https://johir100.netlify.app/">--live site link--</a>
+                                             <p className='text-white'>Html, Bootstrap, javaScript</p>
                                         </div>
                                     </div>
                                 </div>
@@ -150,39 +151,64 @@ const Design = () => {
   {/* ===================== only Back-End base display show=========== */}
   {
     stateList === 'back-end' && <>
- <div className="back-end">
+ <div className="back-end ">
 
-<div class="container">
+<div class="container grid md:grid-cols-2 gap-5 md:px-[7%] py-3 px-10px">
+
+<div>
   <div class="item">
     <div class="card">
       <div class="circle circle2"></div>
       <div class="circle circle1"></div>
-      <img src="https://i.ibb.co/tCKLc3d/audience-band-club-2747446.jpg" />
+      <img  src="https://www.learncomputerscienceonline.com/wp-content/uploads/2019/09/SDLC-Activities.jpg" />
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dolor mauris, eleifend ac fermentum at, pellentesque non sem. Vivamus lectus felis, porttitor eu est sit amet, aliquet laoreet ligula.</p>
+    <div class="content flex justify-center">
+   <div className="block p-4">
+      <h1 className='text-center text-[26px] text-[#f5c903]'>University Management System Authentication Service.</h1>
+  <br/>
+      <h1 className=' text-[20px] text-[#e4e2e2] text-justify pr-5 pl-2'>This is the documentation for the Authentication Service component of the University Management System. The Authentication Service provides authentication and authorization functionalities for the three main roles in the system: Admin, Student, and Faculty. It is built using TypeScript, Express.js, Zod validation, and MongoDB.</h1>
+  
+      
+
+   </div>
     </div>
   </div>
+  <div className="flex mx-1 mt-2 justify-between relative z-[100000]">
+        <Link to={''} onClick={() => window.open('https://documenter.getpostman.com/view/27408621/2s9XxsWwce')} className='btn btn-accent cursor-pointer relative z-[100000]'>Postman Link</Link>
+        <button  onClick={() => window.open('https://github.com/Johirul-islam-6/university-management.git')} className='btn btn-accent'>Github Link</button>
+       
+      </div>
+</div>
+<div>
   <div class="item">
     <div class="card">
       <div class="circle circle2"></div>
       <div class="circle circle1"></div>
-      <img src="https://i.ibb.co/3hnXN31/4k-wallpaper-audience-band-2728557.jpg" />
+      <img  src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010127.jpg?w=2000" />
     </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dolor mauris, eleifend ac fermentum at, pellentesque non sem. Vivamus lectus felis, porttitor eu est sit amet, aliquet laoreet ligula.</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="card">
-      <div class="circle circle2"></div>
-      <div class="circle circle1"></div>
-      <img src="https://i.ibb.co/vqsdkRt/cheerful-concert-crowd-849.jpg" />
-    </div>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dolor mauris, eleifend ac fermentum at, pellentesque non sem. Vivamus lectus felis, porttitor eu est sit amet, aliquet laoreet ligula.</p>
+    <div class="content flex justify-center">
+   <div className="block p-4">
+      <h1 className='text-center text-[26px] text-[#f5c903]'>A Back-End Developer</h1>
+  <br/>
+      <h1 className=' text-[20px] text-[#e4e2e2] text-justify pr-5 pl-2'>Create a practical project as a junior backend developer by building a RESTful API for a task management system. Develop user authentication, task operations, and database integration using Node.js and MongoDB. Gain experience in user registration, task handling, and data security. Showcase skills in middleware, error handling, and API documentation. Employ testing with Jest and deploy on cloud platforms. Demonstrate proficiency in version control using Git and GitHub. This project establishes a strong foundation for backend development growth</h1>
+  
+      
+
+   </div>
     </div>
   </div>
+  <div className="flex mx-1 mt-2 justify-center relative z-[100000]">
+        <Link to={''} onClick={() => window.open('https://www.coursera.org/articles/front-end-vs-back-end')} className='btn btn-accent cursor-pointer relative z-[100000]'>Back-End</Link>
+        {/* <button  onClick={() => window.open('https://github.com/Johirul-islam-6/university-management.git')} className='btn btn-accent'>Github Link</button> */}
+       
+      </div>
+</div>
+
+ 
+
+  
+
+
 </div>
 
  </div>

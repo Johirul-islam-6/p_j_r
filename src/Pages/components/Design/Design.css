@@ -148,21 +148,18 @@
 }
 
 .inside_cetagory .back-end .container {
-    max-width: 1200px;
+    max-width: 100%;
+    height: 90vh !important;
+    height: auto;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
     box-sizing: border-box;
 }
 
 .inside_cetagory .back-end .item {
-    background: #0234FF;
-    height: 400px;
+    background: #5014B8;
+    height: 70vh;
     position: relative;
     border-radius: 15px;
-    padding: 30px;
     box-sizing: border-box;
     color: #fff;
 }
@@ -213,7 +210,7 @@
 }
 
 .inside_cetagory .back-end .circle {
-    background: #1101E8;
+    background: #5014B8;
     max-width: 100%;
     height: 100%;
     position: absolute;

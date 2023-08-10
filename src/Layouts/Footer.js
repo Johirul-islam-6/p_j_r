@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <div>
 
- <div className="pt-[0.5px] text-sm text-center dark:text-gray-400 bg-[#fff]">
+ <div className="pt-[0.8px] text-sm text-center dark:text-gray-400 bg-[#fff]">
 <footer className="footer footer-center p-10 bg-[#14213D] text-base-content rounded">
 
       <ul className="lg-header menu menu-horizontal p-0 grid md:grid-cols-5 gap-4">

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Gentium+Book+Plus:ital@1&family=Poppins:wght@500&family=Rubik:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Gentium+Book+Plus:ital@1&family=Poppins:wght@500&family=Rubik:ital,wght@1,500&family=Source+Sans+Pro:wght@400;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=Hind+Madurai:wght@300;400&family=REM:wght@100;600&family=Work+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Fira+Sans:ital,wght@1,300&family=Hind+Madurai:wght@300;400&family=Playfair+Display&family=REM:wght@100;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -73,12 +73,14 @@
 }
 
 .navbar {
-  z-index: 1000 !important;
+  z-index: 600000 !important;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .navbar .navbar-end{
-font-family: 'Work Sans', sans-serif;
-font-style: normal;
+
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-family: 'Hind Madurai', sans-serif;
+  /* font-family: 'Playfair Display', serif; */
 }
 
 /* -------right side nav---------- */

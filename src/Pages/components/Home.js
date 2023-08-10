@@ -34,7 +34,7 @@ const Home = () => {
                         className=" md:hidden flex flex-col justify-center p-6 text-center relative bottom-[-200px] rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
                         <main class="Text_container mb-6">
-                            <p className='animation_p'>Hello 👋 I'm Johir <br />My Services are</p>
+                            <p className='animation_p'>Hello 👋 I'm Johir <br />My Current Status</p>
                             <section class="animation ">
                                <div class="first">
                                     <div className='text-[29px]'>Front-End development</div>
@@ -49,7 +49,7 @@ const Home = () => {
                             </section>
                             <p className=" work-sans mt-6 mb-8 text-lg lg:text-[18px] sm:mb-12 work-sans">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
-                                <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">MY Services are</Link>
+                                <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">My Current Status</Link>
                                 <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                             </div>
                         </main>
@@ -109,7 +109,7 @@ const Home = () => {
 
                         className="hidden xl:flex flex-col justify-center p-6 text-center absolute top-[25%] left-[-250px] rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                         <main class="Text_container mb-6">
-                            <p className='animation_p '>Hello 👋 I'm Johir <br />My Services are</p>
+                            <p className='animation_p '>Hello 👋 I'm Johir <br />My Current Status</p>
                             <section class="animation ">
                                 <div class="first">
                                     <div className='text-[29px] playfair'>Front-End development</div>
@@ -124,7 +124,7 @@ const Home = () => {
                             </section>
                             <p className=" work-sans mt-6 mb-8 text-lg lg:text-[18px] sm:mb-12">Always love to learn something new . Love to get error and handle error . If I learn something special I share this with my friends . One secret about me I'm very fast learner .</p>
                             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-6">
-                                <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">My Services are</Link>
+                                <Link to='/cetagors' rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded dark:bg-amber-500 dark:text-slate-200 btn-1 hover:opacity-80">My Current Status</Link>
                                 <a rel="noopener noreferrer" href="https://www.linkedin.com/in/md-johirul-islam-rasel-4263b6257/" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">Hire me</a>
                             </div>
                         </main>
@@ -177,7 +177,7 @@ const Home = () => {
                         className="hidden md:block lg:hidden flex-col justify-center px-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
 
                         <main class="Text_container mb-6">
-                            <p className='animation_p'>Hello 👋 I'm Johir <br /> My Services are</p>
+                            <p className='animation_p'>Hello 👋 I'm Johir <br /> My Current Status</p>
                             <section class="animation my-10">
                                  <div class="first">
                                     <div className='text-[24px]'>Front-End development</div>
