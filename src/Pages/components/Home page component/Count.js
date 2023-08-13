@@ -7,7 +7,7 @@ const Count = () => {
     return (
         <>
             <section className=''>
-                <div className="flex bg-image justify-center items-center img-gradient2 h-[90vh] md:h-[60vh]">
+                <div className="flex bg-image justify-center items-center img-gradient2 h-[90vh] md:h-[60vh] overflow-hidden">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-y-3 md:gap-10 ">
                         <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear"
 

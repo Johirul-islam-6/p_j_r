@@ -92,7 +92,7 @@ console.log(successModal)
     return (
         <>
 
-            <section className="bg-[#14213D] py-20 px-2 md:px-5 lg:px-5">
+            <section className="bg-[#14213D] py-20 px-2 md:px-5 lg:px-5 overflow-hidden">
              
             {/* ------What I do for you */}
             <div className="IDo pb-16">
